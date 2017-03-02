@@ -1,0 +1,28 @@
+﻿<Window x:Class="PhapY.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="700" Width="900">
+    <Window.Resources>
+        <Style TargetType="{x:Type Paragraph}">
+            <Setter Property="LineHeight" Value="20"/>
+            <Setter Property="LineStackingStrategy" Value="MaxHeight"></Setter>
+            <Setter Property="Margin" Value="0,0,0,0"></Setter>
+            <Setter Property="FontSize" Value="13pt"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ScrollViewer>
+            <Grid>
+                <RichTextBox HorizontalAlignment="Stretch" Name="richTextBox1" VerticalAlignment="Stretch" Margin="0,0,0,302" FontFamily="Times New Roman" AcceptsTab="True" />
+            <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="203,238,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+
+            <StackPanel Margin="0,365,0,0">
+                <RichTextBox Height="Auto" HorizontalAlignment="Stretch" Name="richTextBox2" BorderThickness="0" FontSize="13pt" FontFamily="Times New Roman"  FontStyle="Italic" />
+                    
+                    <Label Content="aaa"></Label>
+                <TextBox Height="Auto" HorizontalAlignment="Stretch" Name="textBox1" VerticalAlignment="Top"/>
+            </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>

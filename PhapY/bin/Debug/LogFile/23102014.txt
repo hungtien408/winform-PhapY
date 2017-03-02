@@ -1,0 +1,6 @@
+23/10/2014 9:00:03 AM ==> System.Data.DataRow GetRow(Int32) Lỗi: Index 0 is either negative or above rows count.
+23/10/2014 9:00:07 AM ==> System.Data.DataRow GetRow(Int32) Lỗi: Index 0 is either negative or above rows count.
+23/10/2014 9:01:18 AM ==> Void LoadData() Lỗi: Object reference not set to an instance of an object.
+23/10/2014 10:59:35 AM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Error converting data type nvarchar to bigint.
+23/10/2014 11:01:11 AM ==> System.Data.DataRow GetRow(Int32) Lỗi: Index 0 is either negative or above rows count.
+23/10/2014 11:44:39 AM ==> System.Data.DataRow GetRow(Int32) Lỗi: Index 0 is either negative or above rows count.

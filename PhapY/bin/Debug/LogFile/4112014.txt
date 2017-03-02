@@ -1,0 +1,5 @@
+04/11/2014 9:21:14 PM ==> System.Data.DataColumn GetDataColumn(System.String) Lỗi: Column 'TinhThanh' does not belong to table .
+04/11/2014 9:21:29 PM ==> System.Data.DataColumn GetDataColumn(System.String) Lỗi: Column 'TinhThanh' does not belong to table .
+04/11/2014 9:22:18 PM ==> System.Data.DataColumn GetDataColumn(System.String) Lỗi: Column 'TinhThanh' does not belong to table .
+04/11/2014 9:34:17 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Invalid object name 'KhamNgoai'.
+04/11/2014 9:34:20 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Invalid object name 'KhamNgoai'.

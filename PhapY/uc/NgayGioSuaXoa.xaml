@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="PhapY.uc.NgayGioSuaXoa"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:my="clr-namespace:ComponentArt.Win.UI.Data;assembly=ComponentArt.Win.UI.Data" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <my:DataGrid 
+                x:Name="dataGrid1"
+                AllowColumnResizing="True"
+                AllowColumnReordering="True"
+                AllowEditing="True"
+                ShowColumnFilters="True"
+                RunningMode="Client"
+                PageSize="25">
+            <my:DataGrid.CellStyle>
+                <Style TargetType="{x:Type my:DataGridCell}">
+                    <Setter Property="Padding" Value="5" />
+                </Style>
+            </my:DataGrid.CellStyle>
+            <my:DataGrid.Columns>
+                <my:DataGridTextColumn Binding="{Binding NgaySua}" Header="Ngày" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding HanhDong}" Header="Hành động" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding HoTen}" Header="Nhân viên sửa" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding MaHoSo}" Header="Mã hồ sơ" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding SoHoSo}" Header="Số hồ sơ" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding QDTCGDSo}" Header="QĐTCGĐ Số" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Width="18" AllowResizing="False" AllowEditing="False" AllowSorting="False" ShowFilter="False"/>
+            </my:DataGrid.Columns>
+        </my:DataGrid>
+    </Grid>
+</UserControl>

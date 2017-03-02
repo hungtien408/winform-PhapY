@@ -1,0 +1,14 @@
+﻿<Window x:Class="PhapY.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window4" Height="600" Width="800">
+    <Grid x:Name="Container">
+        <FixedPage Width="21.0cm" Height="29.7cm" x:Name="uiPage1">
+            <TextBlock>Hello World!</TextBlock>
+        </FixedPage>
+
+        <DocumentViewer HorizontalAlignment="Stretch" Margin="0" Name="documentViewer1" VerticalAlignment="Stretch" Loaded="documentViewer1_Loaded">
+            <FixedDocument x:Name="uiReport"/>
+        </DocumentViewer>
+    </Grid>
+</Window>

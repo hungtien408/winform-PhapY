@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="PhapY.uc.BieuDoThongKeHoSo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:my="clr-namespace:ComponentArt.Win.Visualization.Charting;assembly=ComponentArt.Win.Visualization.Chart"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800" >
+    <Grid>
+        <my:Chart x:Name="Chart" ChartKind="RoundedBlock" XValue="Thang" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="640" Height="640" EnableDataPointSelectionOnMouseClick="True">
+            <my:Chart.DataSeries>
+                <my:Series YValue="TongSoHoSo" Texture="Boomerang" />
+            </my:Chart.DataSeries>
+        </my:Chart>
+    </Grid>
+</UserControl>

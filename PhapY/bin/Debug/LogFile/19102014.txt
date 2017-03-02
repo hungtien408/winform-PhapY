@@ -1,0 +1,14 @@
+19/10/2014 12:23:12 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_tuthi has too many arguments specified.
+19/10/2014 12:23:16 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_tuthi has too many arguments specified.
+19/10/2014 12:32:28 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_tuthi has too many arguments specified.
+19/10/2014 12:32:31 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_tuthi has too many arguments specified.
+19/10/2014 12:32:47 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_hoso has too many arguments specified.
+19/10/2014 12:33:32 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_hoso has too many arguments specified.
+19/10/2014 12:37:10 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_hoso has too many arguments specified.
+19/10/2014 12:37:22 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_tuthi has too many arguments specified.
+19/10/2014 12:41:14 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function insert_hoso has too many arguments specified.
+19/10/2014 12:42:43 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_hoso has too many arguments specified.
+19/10/2014 12:42:45 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_hoso has too many arguments specified.
+19/10/2014 12:47:46 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function insert_tuthi has too many arguments specified.
+19/10/2014 2:36:11 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_hoso has too many arguments specified.
+19/10/2014 2:50:36 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_hoso has too many arguments specified.

@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="PhapY.uc.TimeTextbox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" xmlns:my="clr-namespace:PhapY.uc" Loaded="UserControl_Loaded">
+    <Grid>
+        <Label FontWeight="Normal" Content="hh" Background="White" x:Name="lblHours" Foreground="#999" VerticalContentAlignment="Center" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Width="30" />
+        <TextBox x:Name="txtHours" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="30" MaxLength="2" KeyDown="txtHours_KeyDown" GotFocus="txtHours_GotFocus" LostFocus="txtHours_LostFocus" />
+        <Label Content="giờ" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" Width="35" />
+        <Label FontWeight="Normal" Content="mm" Foreground="#999" Background="White" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Name="lblMinutes" VerticalContentAlignment="Center" Width="30" Margin="63,0,0,0" />
+        <TextBox  GotFocus="txtMinutes_GotFocus" HorizontalAlignment="Left" KeyDown="txtMinutes_KeyDown" LostFocus="txtMinutes_LostFocus" MaxLength="2" Name="txtMinutes" VerticalAlignment="Stretch" Width="30" Margin="63,0,0,0" />
+        <Label Content="phút" HorizontalAlignment="Left" Margin="99,0,0,0" VerticalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" />
+    </Grid>
+</UserControl>

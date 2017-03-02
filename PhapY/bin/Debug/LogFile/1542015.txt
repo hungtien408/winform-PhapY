@@ -1,0 +1,1 @@
+15/04/2015 10:24:49 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function update_phulucthuongtich has too many arguments specified.

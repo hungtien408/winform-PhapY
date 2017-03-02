@@ -1,0 +1,234 @@
+﻿<UserControl x:Class="PhapY.uc.ThongKeHoSo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:my="clr-namespace:ComponentArt.Win.UI.Data;assembly=ComponentArt.Win.UI.Data" 
+             xmlns:my1="clr-namespace:ComponentArt.Win.UI.Input;assembly=ComponentArt.Win.UI.Input"
+             xmlns:ComponentArt_Win_UI_Utils="clr-namespace:ComponentArt.Win.UI.Utils;assembly=ComponentArt.Win.UI.Common"
+             xmlns:Formatter="clr-namespace:PhapY.Formatter"
+             xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Formatter:FormatSex x:Key="FormatSex"/>
+        <Formatter:LockVisibilityConverter x:Key="LockVisibilityConverter"/>
+        <Formatter:UnlockVisibilityConverter x:Key="UnlockVisibilityConverter"/>
+        <Style x:Key="DropdownlistTextFilter" TargetType="my:DataGridColumnFilterHeader">
+            <Setter Property="IsTabStop" Value="False" />
+            <Setter Property="BorderThickness" Value="1,0,1,0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="my:DataGridColumnFilterHeader">
+                        <Border x:Name="RootElement" HorizontalAlignment="Stretch" Padding="2" BorderThickness="1,0,1,0">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                    <GradientStop Color="#FFF3F3F3" />
+                                    <GradientStop Color="#FFD6D6D6" Offset="1" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Border.BorderBrush>
+                                <LinearGradientBrush EndPoint="1,0" StartPoint="0,0">
+                                    <GradientStop Color="#FFFFFFFF" />
+                                    <GradientStop Color="#FFCCCCCC" Offset="1" />
+                                </LinearGradientBrush>
+                            </Border.BorderBrush>
+                            <Grid x:Name="FilterContent" Visibility="Collapsed">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                </Grid.RowDefinitions>
+                                <Button x:Name="FilterButton" Cursor="Hand" Width="19" Height="18" Visibility="Collapsed">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border BorderBrush="#FFAAAAAA" BorderThickness="1,1,0,1" x:Name="FilterButtonOuterBorder">
+
+                                                <VisualStateManager.VisualStateGroups>
+                                                    <VisualStateGroup x:Name="CommonStates">
+                                                        <VisualState x:Name="Normal" />
+                                                        <VisualState x:Name="MouseOver">
+                                                            <Storyboard>
+                                                                <ColorAnimation Storyboard.TargetName="FilterButtonInnerBorder" Storyboard.TargetProperty="(BorderBrush).(SolidColorBrush.Color)" To="LightBlue" Duration="0:0:0.1" />
+                                                            </Storyboard>
+                                                        </VisualState>
+                                                    </VisualStateGroup>
+                                                </VisualStateManager.VisualStateGroups>
+                                                <Border BorderBrush="#FFFFFFFF" BorderThickness="1" x:Name="FilterButtonInnerBorder">
+                                                    <Border.Background>
+                                                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                                            <GradientStop Color="#FFFFFFFF" />
+                                                            <GradientStop Color="#FFFFFFFF" Offset=".35" />
+                                                            <GradientStop Color="#FFEFEFEF" Offset=".36" />
+                                                            <GradientStop Color="#FFD6D6D6" Offset="1" />
+                                                        </LinearGradientBrush>
+                                                    </Border.Background>
+                                                    <ContentPresenter Content="{TemplateBinding Content}" />
+                                                </Border>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                    <Button.Content>
+                                        <Grid>
+                                            <Image x:Name="NoFilterIcon" ToolTip="Tùy chỉnh bộ lọc" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/PhapY;component/assets/images/Component_Art/Datagrid/datagrid_filter.png" Stretch="None" />
+                                            <Image x:Name="FilterIcon" Visibility="Collapsed" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/PhapY;component/assets/images/Component_Art/Datagrid/datagrid_filterclose.png" Stretch="None" />
+                                        </Grid>
+                                    </Button.Content>
+                                </Button>
+                                <Button x:Name="FilterCloseButton" Cursor="Hand" Width="19" Height="18" Margin="2,0,0,0" Grid.Column="2" Visibility="Collapsed">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border BorderBrush="#FFCCCCCC" BorderThickness="1,1,0,1" x:Name="FilterCloseButtonOuterBorder">
+                                                <VisualStateManager.VisualStateGroups>
+                                                    <VisualStateGroup x:Name="CommonStates">
+                                                        <VisualState x:Name="Normal" />
+                                                        <VisualState x:Name="MouseOver">
+                                                            <Storyboard>
+                                                                <ColorAnimation Storyboard.TargetName="FilterCloseButtonInnerBorder" Storyboard.TargetProperty="(BorderBrush).(SolidColorBrush.Color)" To="LightBlue" Duration="0:0:0.1" />
+                                                            </Storyboard>
+                                                        </VisualState>
+                                                    </VisualStateGroup>
+                                                </VisualStateManager.VisualStateGroups>
+                                                <Border BorderBrush="#FFFFFFFF" BorderThickness="1" x:Name="FilterCloseButtonInnerBorder">
+                                                    <Border.Background>
+                                                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                                            <GradientStop Color="#FFFFFFFF" />
+                                                            <GradientStop Color="#FFFFFFFF" Offset=".35" />
+                                                            <GradientStop Color="#FFEFEFEF" Offset=".36" />
+                                                            <GradientStop Color="#FFD6D6D6" Offset="1" />
+                                                        </LinearGradientBrush>
+                                                    </Border.Background>
+                                                    <Image x:Name="FilterCloseIcon" ToolTip="Xoá bộ lọc" VerticalAlignment="Center" HorizontalAlignment="Center" Source="/PhapY;component/assets/images/Component_Art/Datagrid/datagrid_filterclose.png" Stretch="None" />
+                                                </Border>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                                <ComponentArt_Win_UI_Utils:CommonPopup x:Name="FilterOptionsPopup" VerticalOffset="20">
+                                    <Grid Background="Transparent">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="26" MaxWidth="26" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Border Background="#FFE3E3E3" />
+                                        <Border Background="#FFF9F9F9" Grid.Column="1" />
+                                        <ListBox Background="Transparent" x:Name="FilterOptions" Grid.ColumnSpan="2">
+                                            <ListBoxItem Tag="Equals">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Image x:Name="EqualsIcon" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/PhapY;component/assets/images/Component_Art/Datagrid/datagrid_filter_equals.png" />
+                                                    <TextBlock Margin="10,0,0,0" Grid.Column="1" Text="Bằng" />
+                                                </Grid>
+                                            </ListBoxItem>
+                                            <ListBoxItem Tag="NotEqualTo">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Image x:Name="NotEqualToIcon" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="None" Source="/PhapY;component/assets/images/Component_Art/Datagrid/datagrid_filter_notequals.png" />
+                                                    <TextBlock Margin="10,0,0,0" Grid.Column="1" Text="Không bằng" />
+                                                </Grid>
+                                            </ListBoxItem>
+                                        </ListBox>
+                                    </Grid>
+                                </ComponentArt_Win_UI_Utils:CommonPopup>
+                                <my1:ComboBox AutoComplete="True" AutoFilter="True" IsReadOnly="True" Grid.Column="1" Height="19" Padding="1" FontSize="12" FilteringType="Contains" SelectionFinalized="ComboBox_SelectionFinalized">
+                                    <my1:ComboBoxItem Text="- Tất cả -" Content=""></my1:ComboBoxItem>
+                                    <my1:ComboBoxItem Text="Hồ sơ đang mở" Content="False"></my1:ComboBoxItem>
+                                    <my1:ComboBoxItem Text="Hồ sơ đã khoá" Content="True"></my1:ComboBoxItem>
+                                </my1:ComboBox>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <ToolBar Height="35" HorizontalAlignment="Stretch" x:Name="toolBar1" VerticalAlignment="Top">
+            <Image Source="/PhapY;component/Images/Task-List-icon.png" Width="24" Stretch="Uniform" VerticalAlignment="Center"/>
+            <Label Margin="5,0,5,0" Padding="0" Content="Thống kê hs thương tích/ khám trinh" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="18"/>
+            <Separator/>
+            <Label Content="Tháng:" VerticalContentAlignment="Center" />
+            <ComboBox Height="23" Padding="5,0,5,0" Name="cbbChooseMonth" SelectionChanged="cbbChooseMonth_SelectionChanged" SelectedIndex="0" Loaded="cbbChooseMonth_Loaded">
+                <ComboBoxItem Content="1" />
+            </ComboBox>
+            <Separator/>
+            <Label Content="Từ ngày:" VerticalContentAlignment="Center" />
+            <Custom:DatePicker xml:lang="vi-vn" FirstDayOfWeek="Monday" Name="dpTuNgay" VerticalAlignment="Center" />
+            <Label Content="Đến ngày:" VerticalContentAlignment="Center" />
+            <Custom:DatePicker xml:lang="vi-vn" FirstDayOfWeek="Monday" Name="dpDenNgay" VerticalAlignment="Center" />
+            <Button Name="btnSearch" Content="Tìm" Margin="5,0,0,0" Padding="10,0,10,0" Click="btnSearch_Click" VerticalAlignment="Stretch" />
+            <Separator/>
+            <Button x:Name="btnListView" Margin="5,0,5,0" Width="30" Height="30" Click="btnListView_Click" Visibility="Collapsed">
+                <Image Width="24" Height="24" Source="/PhapY;component/Images/listview.gif" Stretch="Fill" ToolTip="Xem dạng danh sách"/>
+            </Button>
+            <Button x:Name="btnImgView" Margin="5,0,5,0" Width="30" Height="30" Click="btnImgView_Click">
+                <Image Width="24" Height="24" Stretch="Fill" ToolTip="Xem danh sách và hình" Source="/PhapY;component/Images/imageview.gif"/>
+            </Button>
+            <Separator/>
+            <Button x:Name="btnView" Style="{StaticResource ViewButton}" Margin="5" Click="btnView_Click"/>
+            <Separator/>
+            <Button x:Name="btnRefresh" Style="{StaticResource RefreshButton}" Margin="5" Click="btnRefresh_Click"/>
+            <Separator/>
+            <Button x:Name="btnExcelExport" Style="{StaticResource ExportExcelButton}" Margin="5" Click="btnExcelExport_Click"/>
+
+            <Separator/>
+            <Label Content="Tổng số hồ sơ:" VerticalContentAlignment="Center"/>
+            <Label Name="tblkTotal" Content="0" VerticalContentAlignment="Center" FontWeight="Bold" />
+        </ToolBar>
+        <my:DataGrid 
+                x:Name="dataGrid1"
+                AllowColumnResizing="True"
+                AllowColumnReordering="True"
+                AllowEditing="True"
+                ShowColumnFilters="True"
+                RunningMode="Client"
+                PageSize="25"  
+                Margin="0,41,0,0" PageIndexChanged="dataGrid1_PageIndexChanged">
+            <my:DataGrid.CellStyle>
+                <Style TargetType="{x:Type my:DataGridCell}">
+                    <Setter Property="Padding" Value="5" />
+                </Style>
+            </my:DataGrid.CellStyle>
+            <my:DataGrid.Columns>
+                <my:DataGridTextColumn Binding="{Binding MaHoSo}" Header="Mã hồ sơ" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding QDTCGDSo}" Header="QĐTCGĐ Số" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTemplateColumn Binding="{Binding HinhDuongSu}" Header="Hình đương sự" ShowFilter="False" Width="0">
+                    <my:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image x:Name="imgHinhDuongSu" Source="{Binding}" Margin="-5" Stretch="Uniform" Width="100" Visibility="Collapsed"/>
+                        </DataTemplate>
+                    </my:DataGridTemplateColumn.CellTemplate>
+                </my:DataGridTemplateColumn>
+                <my:DataGridTextColumn Binding="{Binding HoTen}" Header="Họ tên" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding NamSinh}" Header="Năm sinh" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding DiaChi}" Header="Địa chỉ" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding DienThoai}" Header="Điện thoại" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding GioiTinh, Converter={StaticResource FormatSex}}" Header="Giới tính" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding NgayDenLamHoSo}" Header="Ngày đến làm hồ sơ" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Binding="{Binding NgheNghiep}" Header="Nghề nghiệp" AllowEditing="False" Width="1*" FilterHeaderStyle="{StaticResource TextFilter}" />
+                <my:DataGridTextColumn Header="HS đang ở phòng" Binding="{Binding DangOPhong}" Width="1*" />
+                <my:DataGridTextColumn Binding="{Binding TinhTrangHoSo}" AllowEditing="False" Width="0" />
+                <my:DataGridTemplateColumn Binding="{Binding}" Header="T.Trạng" FilterHeaderStyle="{StaticResource DropdownlistTextFilter}" AllowEditing="False" Width="55">
+                    <my:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center">
+                                <Image Source="/PhapY;component/Images/unlock.png" ToolTip="Đang mở. Click để khoá." Stretch="Uniform" Width="24" Height="24" Visibility="{Binding TinhTrangHoSo,Converter={StaticResource LockVisibilityConverter}}"/>
+                                <Image Source="/PhapY;component/Images/lock.png" ToolTip="Đang khoá. Click để mở." Height="24" Width="24" Visibility="{Binding TinhTrangHoSo,Converter={StaticResource UnlockVisibilityConverter}}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </my:DataGridTemplateColumn.CellTemplate>
+                </my:DataGridTemplateColumn>
+                <my:DataGridTextColumn Width="18" AllowResizing="False" AllowEditing="False" AllowSorting="False" ShowFilter="False"/>
+            </my:DataGrid.Columns>
+        </my:DataGrid>
+
+    </Grid>
+</UserControl>

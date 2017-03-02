@@ -1,0 +1,109 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+        x:Class="PhapY.MainWindow"
+        Title="Quản lý Trung Tâm Pháp Y"
+        Height="700"
+        Width="1024"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Arial"
+        Unloaded="Window_Unloaded"
+        xmlns:my="clr-namespace:PhapY.uc">
+    <Window.CommandBindings>
+        <CommandBinding Command="Print"
+                        Executed="Print_Executed"></CommandBinding>
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding Command="Print"
+                    Modifiers="Ctrl"
+                    Key="P"></KeyBinding>
+    </Window.InputBindings>
+    <Grid>
+        <Menu Height="23"
+              HorizontalAlignment="Stretch"
+              x:Name="mainMenu"
+              VerticalAlignment="Top"
+              IsEnabled="False">
+            <MenuItem Header="File">
+                <MenuItem Header="Tạo tài khoản"
+                          Name="menuCreateUser"
+                          Click="menuCreateUser_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/PhapY;component/Images/add_user.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Đổi mật khẩu"
+                          Click="MenuItem_Click_5">
+                    <MenuItem.Icon>
+                        <Image Source="/PhapY;component/Images/changepw.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Print preview"
+                          Click="MenuItem_Click_2">
+                    <MenuItem.Icon>
+                        <Image Source="/PhapY;component/Images/PrintPreview.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Print..."
+                          InputGestureText="Ctrl + P"
+                          Click="MenuItem_Click_6">
+                    <MenuItem.Icon>
+                        <Image Source="/PhapY;component/Images/Print.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Đăng xuất"
+                          Click="MenuItem_Click_3">
+                    <MenuItem.Icon>
+                        <Image Source="/PhapY;component/Images/sign-out.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Thoát"
+                          InputGestureText="Alt + F4"
+                          Click="MenuItem_Click_4">
+                    <MenuItem.Icon>
+                        <Image Source="/PhapY;component/Images/shutdown.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Thương tích/Khám trinh"
+                      Click="MenuItem_Click_1" />
+            <MenuItem Header="Tử thi"
+                      Click="MenuItem_Click_9" />
+            <MenuItem Name="menuNhanVien"
+                      Header="Nhân viên"
+                      Click="MenuItem_Click" />
+            <MenuItem Header="Quản lý thêm/sửa/xoá"
+                      Name="menuTSX"
+                      Click="MenuItem_Click_11" />
+            <MenuItem Header="Thống kê">
+                <MenuItem Header="Thương tích/ Khám trinh"
+                          Click="MenuItem_Click_7" />
+                <MenuItem Header="Tử thi"
+                          Click="MenuItem_Click_10" />
+            </MenuItem>
+            <MenuItem Header="Reports">
+                <MenuItem Header="Tử thi"
+                          Click="MenuItem_Click_12" />
+                <MenuItem Header="Thuơng tật"
+                          Click="MenuItem_Click_13" />
+                <MenuItem Header="Khám trinh"
+                          Click="MenuItem_Click_14" />
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About"
+                          Click="MenuItem_Click_8" />
+            </MenuItem>
+        </Menu>
+        <Grid HorizontalAlignment="Stretch"
+              Margin="5,20,5,5"
+              x:Name="Container"
+              VerticalAlignment="Stretch">
+            <my:Login HorizontalAlignment="Stretch"
+                      x:Name="login1"
+                      VerticalAlignment="Stretch" />
+        </Grid>
+    </Grid>
+</Window>

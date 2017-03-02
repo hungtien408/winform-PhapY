@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="PhapY.Controls.RichTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type RichTextBox}">
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="Padding" Value="0,3,0,0"></Setter>
+            <Setter Property="BorderBrush" Value="{x:Null}"></Setter>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <VisualBrush 
+                                TileMode="Tile"
+                                Viewport="0,-0.98,3,20"
+                                ViewportUnits="Absolute"
+                                Viewbox="0,0,3,20"
+                                ViewboxUnits="Absolute">
+                        <VisualBrush.Visual>
+                            <Rectangle Fill="Black" Width="1" Height="1"></Rectangle>
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type Paragraph}">
+            <Setter Property="LineHeight" Value="20"/>
+            <Setter Property="LineStackingStrategy" Value="MaxHeight"></Setter>
+            <Setter Property="Margin" Value="0,0,0,0"></Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <RichTextBox x:Name="XAMLRichBox" SpellCheck.IsEnabled="False" ScrollViewer.VerticalScrollBarVisibility="Auto" TextBlock.LineHeight="20" AcceptsTab="True" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        </RichTextBox>
+    </Grid>
+</UserControl>

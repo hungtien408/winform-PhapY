@@ -1,0 +1,517 @@
+D:\Project lam viec\PhapY\PhapY\PhapY\bin\Debug\PhapY.exe.config
+D:\Project lam viec\PhapY\PhapY\PhapY\bin\Debug\PhapY.exe
+D:\Project lam viec\PhapY\PhapY\PhapY\bin\Debug\PhapY.pdb
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\MainWindow.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\App.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY_MarkupCompile.cache
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.g.resources
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.Properties.Resources.resources
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.exe
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.pdb
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateNhanvien.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachNhanVien.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\bin\Debug\WPFToolkit.pdb
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\NumericTextbox.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\NumericTextbox.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\CurrencyTextbox.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxNhanVien.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\CurrencyTextbox.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxNhanVien.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxChucVu.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxChucVu.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY_MarkupCompile.lref
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxTitle.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxTitle.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachTitle.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChucVu.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChupHinh.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\ValidatorControls\RequiredFieldValidator.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\ValidatorControls\RequiredFieldValidator.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\RichTextBox.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\RichTextBox.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateDuongSu.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PrintPreviewDialog.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PrintPreviewDialog.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\App.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinh.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinh.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\LogonServer.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\LogonServer.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemHoSo.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSo.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinh.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinh.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhThuongTich.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\TimeTextbox.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\CreateUsers.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\CreateUser.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\CreateUser.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\Login.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\Login.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ChangePassword.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ChangePassword.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTinhDuc.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\InBienNhan.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeHoSo.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeHoSo.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeHoSo.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeHoSo.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemHoSo.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\About.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\About.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\MainWindow.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemHoSo.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\InBienNhan.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTinhDuc.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhThuongTich.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemHoSo.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateDuongSu.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateNhanvien.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeHoSo.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\CreateUsers.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSo.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChupHinh.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachTitle.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChucVu.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachNhanVien.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeHoSo.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\TimeTextbox.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhThuongTat.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhThuongTat.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\testXPS.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\testXPS.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinh.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinh.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChup.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChup.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChonBacSi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChonBacSi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSoTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThemTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSoTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThemTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChupTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinhTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChupTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinhTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinhTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinhTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinhTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinhTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemBanGiamDinhTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemBanGiamDinhTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucThuongTich.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucThuongTich.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemTuThi.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemTuThi.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\NgayGioSuaXoa.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\NgayGioSuaXoa.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTat.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTat.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatQHS.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatQHS.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc1.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTinhDuc.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc1.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTinhDuc.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThiKhamNgoai.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThiKhamNgoai.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Window1.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Window1.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Copy of WindowInBanGiamDinhThuongTat.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Copy of WindowInBanGiamDinhThuongTat.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Window2.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Window2.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Window4.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Window4.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\RdlCompile.cache
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\RdlCompile.compiled
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewer.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewer.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Report.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Report.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerThuongTat.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportThuongTat.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerThuongTat.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportThuongTat.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\bin\Debug\System.Printing.dll
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Window5.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\Window5.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerKhamTrinh.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportKhamTrinh.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerKhamTrinh.g.cs
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportKhamTrinh.baml
+D:\Project lam viec\PhapY\PhapY\PhapY\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.csprojResolveAssemblyReference.cache
+D:\Project lam viec\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.csproj.GenerateResource.Cache
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\PhapY.exe.config
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.exe
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.pdb
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\PhapY.exe
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\PhapY.pdb
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\ComponentArt.Win.UI.Common.dll
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\ComponentArt.Win.UI.Data.dll
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\ComponentArt.Win.UI.Input.dll
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\ComponentArt.Win.Visualization.Chart.dll
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\System.Printing.dll
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\WPFToolkit.dll
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\WPFToolkit.pdb
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.csprojResolveAssemblyReference.cache
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\CurrencyTextbox.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\NumericTextbox.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\RichTextBox.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\CreateUser.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\About.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Copy of WindowInBanGiamDinhThuongTat.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucThuongTich.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinhTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinhTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChonBacSi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemBanGiamDinhTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinh.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinh.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeHoSo.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ChangePassword.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxNhanVien.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxChucVu.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxTitle.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerKhamTrinh.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerThuongTat.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\NgayGioSuaXoa.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewer.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChupTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinhTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PrintPreviewDialog.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinh.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\Login.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\LogonServer.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChup.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\ValidatorControls\RequiredFieldValidator.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window1.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window4.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window5.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\App.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\CurrencyTextbox.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\NumericTextbox.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\RichTextBox.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\CreateUser.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\MainWindow.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\About.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportKhamTrinh.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportThuongTat.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Copy of WindowInBanGiamDinhThuongTat.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Report.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhThuongTat.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucThuongTich.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinhTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinhTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChonBacSi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc1.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemBanGiamDinhTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemHoSo.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\InBienNhan.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTinhDuc.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhThuongTich.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinh.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinh.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemHoSo.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateDuongSu.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateNhanvien.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeHoSo.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeHoSo.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ChangePassword.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxNhanVien.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxChucVu.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxTitle.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerKhamTrinh.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerThuongTat.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThiKhamNgoai.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTinhDuc.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatQHS.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTat.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\NgayGioSuaXoa.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewer.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChupTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinhTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSoTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\CreateUsers.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSo.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChupHinh.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachTitle.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChucVu.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachNhanVien.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PrintPreviewDialog.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinh.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\Login.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\LogonServer.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\testXPS.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThemTuThi.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeHoSo.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\TimeTextbox.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChup.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\ValidatorControls\RequiredFieldValidator.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window1.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window2.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window4.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window5.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\App.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY_MarkupCompile.cache
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY_MarkupCompile.lref
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\MainWindow.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportKhamTrinh.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportThuongTat.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Report.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhThuongTat.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc1.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemHoSo.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\InBienNhan.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTinhDuc.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhThuongTich.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemHoSo.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateDuongSu.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateNhanvien.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeHoSo.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThiKhamNgoai.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTinhDuc.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatQHS.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTat.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSoTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\CreateUsers.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSo.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChupHinh.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachTitle.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChucVu.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachNhanVien.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\testXPS.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThemTuThi.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeHoSo.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\TimeTextbox.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window2.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.g.resources
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.Properties.Resources.resources
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.csproj.GenerateResource.Cache
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\RdlCompile.cache
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\RdlCompile.compiled
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\SQLServerConfiguration.baml
+D:\Project Work\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\SQLServerConfiguration.g.cs
+D:\Project Work\Winform\PhapY\PhapY\PhapY\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\PhapY.exe.config
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.exe
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.pdb
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\PhapY.exe
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\PhapY.pdb
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\ComponentArt.Win.UI.Common.dll
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\ComponentArt.Win.UI.Data.dll
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\ComponentArt.Win.UI.Input.dll
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\ComponentArt.Win.Visualization.Chart.dll
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\System.Printing.dll
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\WPFToolkit.dll
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+E:\Winform\PhapY\PhapY\PhapY\bin\Debug\WPFToolkit.pdb
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.csprojResolveAssemblyReference.cache
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\CurrencyTextbox.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\NumericTextbox.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\RichTextBox.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\CreateUser.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\About.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Copy of WindowInBanGiamDinhThuongTat.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\SQLServerConfiguration.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucThuongTich.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinhTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinhTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChonBacSi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemBanGiamDinhTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinh.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinh.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeHoSo.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ChangePassword.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxNhanVien.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxChucVu.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxTitle.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerKhamTrinh.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerThuongTat.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\NgayGioSuaXoa.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewer.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChupTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinhTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PrintPreviewDialog.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinh.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\Login.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\LogonServer.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChup.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\ValidatorControls\RequiredFieldValidator.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window1.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window4.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window5.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\App.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\CurrencyTextbox.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\NumericTextbox.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Controls\RichTextBox.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\CreateUser.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\MainWindow.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\About.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportKhamTrinh.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportThuongTat.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Copy of WindowInBanGiamDinhThuongTat.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Report.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\SQLServerConfiguration.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhThuongTat.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PhuLucThuongTich.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinhTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinhTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChonBacSi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc1.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemBanGiamDinhTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemHoSo.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\InBienNhan.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTinhDuc.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhThuongTich.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInHinh.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowChupHinh.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemHoSo.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateDuongSu.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateNhanvien.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeHoSo.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeHoSo.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ChangePassword.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxNhanVien.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxChucVu.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ComboboxTitle.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\BieuDoThongKeTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerKhamTrinh.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewerThuongTat.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThiKhamNgoai.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTinhDuc.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatQHS.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTat.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\NgayGioSuaXoa.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ReportViewer.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChupTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinhTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSoTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\CreateUsers.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSo.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChupHinh.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachTitle.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChucVu.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachNhanVien.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\PrintPreviewDialog.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InHinh.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\Login.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\LogonServer.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\testXPS.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThemTuThi.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeHoSo.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\TimeTextbox.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemHinhChup.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\ValidatorControls\RequiredFieldValidator.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window1.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window2.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window4.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window5.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\App.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY_MarkupCompile.cache
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY_MarkupCompile.lref
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\MainWindow.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportKhamTrinh.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\ReportThuongTat.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\Report.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhThuongTat.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTinhDuc1.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowInBanGiamDinhTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowXemHoSo.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\InBienNhan.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhTinhDuc.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowKetLuanGiamDinhThuongTich.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\SubWindows\WindowThemHoSo.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateDuongSu.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateNhanvien.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\TemplateControl\TemplateThongKeHoSo.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThiKhamNgoai.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTinhDuc.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTatQHS.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYThuongTat.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\XemTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSoTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\CreateUsers.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachHoSo.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChupHinh.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachTitle.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachChucVu.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\DanhSachNhanVien.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\InBanGiamDinhPhapYTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\testXPS.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThemTuThi.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\ThongKeHoSo.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\uc\TimeTextbox.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\Window2.baml
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.g.resources
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.Properties.Resources.resources
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\PhapY.csproj.GenerateResource.Cache
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\RdlCompile.cache
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\RdlCompile.compiled

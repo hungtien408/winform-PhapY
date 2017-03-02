@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F7B9A1C4-94EB-4863-86BE-ACCCF94DF26E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhapY</RootNamespace>
+    <AssemblyName>PhapY</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico-tran-le-1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="ComponentArt.Win.UI.Common, Version=2010.1.2637.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb" />
+    <Reference Include="ComponentArt.Win.UI.Data, Version=2010.1.2637.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb" />
+    <Reference Include="ComponentArt.Win.UI.Input, Version=2010.1.2637.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb" />
+    <Reference Include="ComponentArt.Win.Visualization.Chart, Version=2010.1.2637.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="PresentationUI, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App_Code\Common\Common.cs" />
+    <Compile Include="App_Code\CreateLogFiles.cs" />
+    <Compile Include="App_Code\Export.cs" />
+    <Compile Include="App_Code\TableKhamNgoai.cs" />
+    <Compile Include="App_Code\TableKhamTrong.cs" />
+    <Compile Include="App_Code\TableReport.cs" />
+    <Compile Include="App_Code\TableNgayGioSuaXoa.cs" />
+    <Compile Include="App_Code\TablePhuLucTuThi.cs" />
+    <Compile Include="App_Code\TablePhuLucThuongTich.cs" />
+    <Compile Include="App_Code\TableChupHinhTuThi.cs" />
+    <Compile Include="App_Code\TableKetLuanTuThi.cs" />
+    <Compile Include="App_Code\TableKetLuanTinhDuc.cs" />
+    <Compile Include="App_Code\NetWorkDrive.cs" />
+    <Compile Include="App_Code\TableChucVu.cs" />
+    <Compile Include="App_Code\TableChupHinh.cs" />
+    <Compile Include="App_Code\TableHoSo.cs" />
+    <Compile Include="App_Code\TableKetLuanThuongTich.cs" />
+    <Compile Include="App_Code\TableNhanVien.cs" />
+    <Compile Include="App_Code\TableTitle.cs" />
+    <Compile Include="App_Code\TableTuThi.cs" />
+    <Compile Include="App_Code\TableUsers.cs" />
+    <Compile Include="Controls\CurrencyTextbox.xaml.cs">
+      <DependentUpon>CurrencyTextbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MyDocumentViewer .cs" />
+    <Compile Include="Controls\NumericTextbox.xaml.cs">
+      <DependentUpon>NumericTextbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RichTextBox.xaml.cs">
+      <DependentUpon>RichTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.xaml.cs">
+      <DependentUpon>CreateUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DBPhapYDataSet.cs">
+      <DependentUpon>DBPhapYDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DBPhapYDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBPhapYDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formatter\BoolImageConverter.cs" />
+    <Compile Include="Formatter\FormatVisibilityPhetDichAmDao.cs" />
+    <Compile Include="Formatter\FormatIsEnable.cs" />
+    <Compile Include="Formatter\FormatDate.cs" />
+    <Compile Include="Formatter\FormatVisibility.cs" />
+    <Compile Include="Formatter\FormatVisibilityVinhVien.cs" />
+    <Compile Include="Formatter\TextIndentConverter1.cs" />
+    <Compile Include="Formatter\TextIndentConverter.cs" />
+    <Compile Include="Formatter\TextIndentConverter2.cs" />
+    <Compile Include="Formatter\UnlockVisibilityConverter.cs" />
+    <Compile Include="Formatter\LockVisibilityConverter.cs" />
+    <Compile Include="Formatter\UpperCaseConverter.cs" />
+    <Compile Include="Formatter\FormatSex.cs" />
+    <Compile Include="SubWindows\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\ReportKhamTrinh.xaml.cs">
+      <DependentUpon>ReportKhamTrinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\ReportThuongTat.xaml.cs">
+      <DependentUpon>ReportThuongTat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\Copy of WindowInBanGiamDinhThuongTat.xaml.cs">
+      <DependentUpon>Copy of WindowInBanGiamDinhThuongTat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\Report.xaml.cs">
+      <DependentUpon>Report.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\SQLServerConfiguration.xaml.cs">
+      <DependentUpon>SQLServerConfiguration.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SubWindows\WindowInBanGiamDinhTinhDuc.xaml.cs">
+      <DependentUpon>WindowInBanGiamDinhTinhDuc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowInBanGiamDinhThuongTat.xaml.cs">
+      <DependentUpon>WindowInBanGiamDinhThuongTat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\PhuLucTuThi.xaml.cs">
+      <DependentUpon>PhuLucTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\PhuLucThuongTich.xaml.cs">
+      <DependentUpon>PhuLucThuongTich.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowInHinhTuThi.xaml.cs">
+      <DependentUpon>WindowInHinhTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowChupHinhTuThi.xaml.cs">
+      <DependentUpon>WindowChupHinhTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowChonBacSi.xaml.cs">
+      <DependentUpon>WindowChonBacSi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowInBanGiamDinhTinhDuc1.xaml.cs">
+      <DependentUpon>WindowInBanGiamDinhTinhDuc1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowInBanGiamDinhTuThi.xaml.cs">
+      <DependentUpon>WindowInBanGiamDinhTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowKetLuanGiamDinhTuThi.xaml.cs">
+      <DependentUpon>WindowKetLuanGiamDinhTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowThemTuThi.xaml.cs">
+      <DependentUpon>WindowThemTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowXemBanGiamDinhTuThi.xaml.cs">
+      <DependentUpon>WindowXemBanGiamDinhTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowXemHoSo.xaml.cs">
+      <DependentUpon>WindowXemHoSo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\InBienNhan.xaml.cs">
+      <DependentUpon>InBienNhan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowKetLuanGiamDinhTinhDuc.xaml.cs">
+      <DependentUpon>WindowKetLuanGiamDinhTinhDuc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowKetLuanGiamDinhThuongTich.xaml.cs">
+      <DependentUpon>WindowKetLuanGiamDinhThuongTich.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowInHinh.xaml.cs">
+      <DependentUpon>WindowInHinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowChupHinh.xaml.cs">
+      <DependentUpon>WindowChupHinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\WindowThemHoSo.xaml.cs">
+      <DependentUpon>WindowThemHoSo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateControl\TemplateThongKeTuThi.xaml.cs">
+      <DependentUpon>TemplateThongKeTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateControl\TemplateDuongSu.xaml.cs">
+      <DependentUpon>TemplateDuongSu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateControl\TemplateNhanvien.xaml.cs">
+      <DependentUpon>TemplateNhanvien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateControl\TemplateThongKeHoSo.xaml.cs">
+      <DependentUpon>TemplateThongKeHoSo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\BieuDoThongKeHoSo.xaml.cs">
+      <DependentUpon>BieuDoThongKeHoSo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ChangePassword.xaml.cs">
+      <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ComboboxNhanVien.xaml.cs">
+      <DependentUpon>ComboboxNhanVien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ComboboxChucVu.xaml.cs">
+      <DependentUpon>ComboboxChucVu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ComboboxTitle.xaml.cs">
+      <DependentUpon>ComboboxTitle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\BieuDoThongKeTuThi.xaml.cs">
+      <DependentUpon>BieuDoThongKeTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ReportViewerKhamTrinh.xaml.cs">
+      <DependentUpon>ReportViewerKhamTrinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ReportViewerThuongTat.xaml.cs">
+      <DependentUpon>ReportViewerThuongTat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.xaml.cs">
+      <DependentUpon>InBanGiamDinhPhapYThuongTatNguyenNhanChet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\InBanGiamDinhPhapYTuThiKhamNgoai.xaml.cs">
+      <DependentUpon>InBanGiamDinhPhapYTuThiKhamNgoai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\InBanGiamDinhPhapYTinhDuc.xaml.cs">
+      <DependentUpon>InBanGiamDinhPhapYTinhDuc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\InBanGiamDinhPhapYThuongTatQHS.xaml.cs">
+      <DependentUpon>InBanGiamDinhPhapYThuongTatQHS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\InBanGiamDinhPhapYThuongTat.xaml.cs">
+      <DependentUpon>InBanGiamDinhPhapYThuongTat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\NgayGioSuaXoa.xaml.cs">
+      <DependentUpon>NgayGioSuaXoa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ReportViewer.xaml.cs">
+      <DependentUpon>ReportViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\XemTuThi.xaml.cs">
+      <DependentUpon>XemTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ThongKeTuThi.xaml.cs">
+      <DependentUpon>ThongKeTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\XemHinhChupTuThi.xaml.cs">
+      <DependentUpon>XemHinhChupTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\InHinhTuThi.xaml.cs">
+      <DependentUpon>InHinhTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\DanhSachHoSoTuThi.xaml.cs">
+      <DependentUpon>DanhSachHoSoTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\CreateUsers.xaml.cs">
+      <DependentUpon>CreateUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\DanhSachHoSo.xaml.cs">
+      <DependentUpon>DanhSachHoSo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\DanhSachChupHinh.xaml.cs">
+      <DependentUpon>DanhSachChupHinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\DanhSachTitle.xaml.cs">
+      <DependentUpon>DanhSachTitle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\DanhSachChucVu.xaml.cs">
+      <DependentUpon>DanhSachChucVu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\DanhSachNhanVien.xaml.cs">
+      <DependentUpon>DanhSachNhanVien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\PrintPreviewDialog.xaml.cs">
+      <DependentUpon>PrintPreviewDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\InBanGiamDinhPhapYTuThi.xaml.cs">
+      <DependentUpon>InBanGiamDinhPhapYTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\InHinh.xaml.cs">
+      <DependentUpon>InHinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\LogonServer.xaml.cs">
+      <DependentUpon>LogonServer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\testXPS.xaml.cs">
+      <DependentUpon>testXPS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ThemTuThi.xaml.cs">
+      <DependentUpon>ThemTuThi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ThongKeHoSo.xaml.cs">
+      <DependentUpon>ThongKeHoSo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\TimeTextbox.xaml.cs">
+      <DependentUpon>TimeTextbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\XemHinhChup.xaml.cs">
+      <DependentUpon>XemHinhChup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ValidatorControls\RequiredFieldValidator.xaml.cs">
+      <DependentUpon>RequiredFieldValidator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window2.xaml.cs">
+      <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4.xaml.cs">
+      <DependentUpon>Window4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window5.xaml.cs">
+      <DependentUpon>Window5.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\CurrencyTextbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\NumericTextbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RichTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CreateUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="SubWindows\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\ReportKhamTrinh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\ReportThuongTat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\Copy of WindowInBanGiamDinhThuongTat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\Report.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\SQLServerConfiguration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\WindowInBanGiamDinhTinhDuc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\WindowInBanGiamDinhThuongTat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\PhuLucTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\PhuLucThuongTich.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\WindowInHinhTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\WindowChupHinhTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\WindowChonBacSi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\WindowInBanGiamDinhTinhDuc1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\WindowInBanGiamDinhTuThi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\WindowKetLuanGiamDinhTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\WindowThemTuThi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\WindowXemBanGiamDinhTuThi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\WindowXemHoSo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\InBienNhan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\WindowKetLuanGiamDinhTinhDuc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\WindowKetLuanGiamDinhThuongTich.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\WindowInHinh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SubWindows\WindowChupHinh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\WindowThemHoSo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateControl\TemplateThongKeTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TemplateControl\TemplateDuongSu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TemplateControl\TemplateNhanvien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TemplateControl\TemplateThongKeHoSo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\BieuDoThongKeHoSo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\ChangePassword.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\ComboboxNhanVien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\ComboboxChucVu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\ComboboxTitle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\BieuDoThongKeTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\ReportViewerKhamTrinh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\ReportViewerThuongTat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\InBanGiamDinhPhapYTuThiKhamNgoai.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\InBanGiamDinhPhapYTinhDuc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\InBanGiamDinhPhapYThuongTatQHS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\InBanGiamDinhPhapYThuongTat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\NgayGioSuaXoa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\ReportViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\XemTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\ThongKeTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\XemHinhChupTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\InHinhTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\DanhSachHoSoTuThi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\CreateUsers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\DanhSachHoSo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\DanhSachChupHinh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\DanhSachTitle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\DanhSachChucVu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\DanhSachNhanVien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\PrintPreviewDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\InBanGiamDinhPhapYTuThi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\InHinh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\LogonServer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\testXPS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\ThemTuThi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\ThongKeHoSo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\TimeTextbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="uc\XemHinhChup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ValidatorControls\RequiredFieldValidator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\KhamTrinh.rdlc" />
+    <EmbeddedResource Include="Reports\ThuongTat.rdlc" />
+    <EmbeddedResource Include="Reports\Copy of TuThi.rdlc" />
+    <EmbeddedResource Include="Reports\TuThi.rdlc" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="ComponentArt.UIFramework.lic" />
+    <None Include="DBPhapYDataSet.xsc">
+      <DependentUpon>DBPhapYDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBPhapYDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBPhapYDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBPhapYDataSet.xss">
+      <DependentUpon>DBPhapYDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_user.png" />
+    <Resource Include="Images\bt.png" />
+    <Resource Include="Images\btnbg.png" />
+    <Resource Include="Images\btnbg_disable.png" />
+    <Resource Include="Images\changepw.png" />
+    <Resource Include="Images\check.png" />
+    <Resource Include="Images\customer.png" />
+    <Resource Include="Images\dg_sepl.gif" />
+    <Resource Include="Images\dg_sepr.gif" />
+    <Resource Include="Images\find_document-hover.png" />
+    <Resource Include="Images\find_document.png" />
+    <Resource Include="Images\grip.png" />
+    <Resource Include="Images\ico-tran-le-1.ico" />
+    <Resource Include="Images\icon_close_window.jpg" />
+    <Resource Include="Images\import-export.png" />
+    <Resource Include="Images\kimsang-logo.png" />
+    <Resource Include="Images\kimsang.ico" />
+    <Resource Include="Images\l.png" />
+    <Resource Include="Images\lb.png" />
+    <Resource Include="Images\logo-tranle.png" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\logomatis.ico" />
+    <Resource Include="Images\lt.png" />
+    <Resource Include="Images\money-icon.png" />
+    <Resource Include="Images\nav-prefs.png" />
+    <Resource Include="Images\nav-stop.png" />
+    <Resource Include="Images\Print.png" />
+    <Resource Include="Images\printer_2.png" />
+    <Resource Include="Images\PrintPreview.png" />
+    <Resource Include="Images\r.png" />
+    <Resource Include="Images\rb.png" />
+    <Resource Include="Images\Remove-icon-hover.png" />
+    <Resource Include="Images\Remove-icon-press.png" />
+    <Resource Include="Images\Remove-icon.png" />
+    <Resource Include="Images\rt.png" />
+    <Resource Include="Images\shutdown-icon.png" />
+    <Resource Include="Images\shutdown.png" />
+    <Resource Include="Images\sign-out.png" />
+    <Resource Include="Images\t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dokter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\position.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_editing_accept.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_editing_accept_hover.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_editing_cancel.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_editing_cancel_hover.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_editing_delete.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_editing_delete_hover.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_editing_edit.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_editing_edit_hover.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filterclose.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter_contains.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter_equals.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter_greaterthan.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter_greaterthanorequals.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter_lessthan.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter_lessthanorequals.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter_notequals.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\datagrid_filter_startswith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\graduation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ValidatorControls\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\Component_Art\Datagrid\add_button.png" />
+    <Resource Include="assets\images\Component_Art\Datagrid\add_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\Component_Art\Datagrid\refresh_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\Component_Art\Datagrid\refresh_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hinh4x6_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Task-List-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\imageview.gif" />
+    <Resource Include="Images\listview.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bien-nhan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\img-check.png" />
+    <Resource Include="Images\img-no-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Anam1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\img-check.gif" />
+    <Resource Include="Images\img-no-check.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\book.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logotranle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\Scan1.jpg" />
+    <Resource Include="assets\Scan10001.jpg" />
+    <Resource Include="assets\Scan10002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\Scan9.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lock.png" />
+    <Resource Include="Images\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\Component_Art\Datagrid\quick_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\Component_Art\Datagrid\quick_edit_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ico-tran-le-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\excel_icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ban moi 1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\abc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\images\Icons\add-16x16.png" />
+    <Resource Include="assets\images\Icons\appointment-32x32.png" />
+    <Resource Include="assets\images\Icons\bank-32x32.png" />
+    <Resource Include="assets\images\Icons\bankamount-32x32.png" />
+    <Resource Include="assets\images\Icons\branch-32x32.png" />
+    <Resource Include="assets\images\Icons\branch-transfer-32x32.png" />
+    <Resource Include="assets\images\Icons\cancel.png" />
+    <Resource Include="assets\images\Icons\CargoShip-32x32.png" />
+    <Resource Include="assets\images\Icons\change-password-32x32.png" />
+    <Resource Include="assets\images\Icons\client-32x32.png" />
+    <Resource Include="assets\images\Icons\close-16x16.png" />
+    <Resource Include="assets\images\Icons\close-32x32.png" />
+    <Resource Include="assets\images\Icons\collapse-all-16x16.png" />
+    <Resource Include="assets\images\Icons\contract-32x32.png" />
+    <Resource Include="assets\images\Icons\copy-16x16.png" />
+    <Resource Include="assets\images\Icons\copy-32x32.png" />
+    <Resource Include="assets\images\Icons\country-32x32.png" />
+    <Resource Include="assets\images\Icons\csv-24x24.png" />
+    <Resource Include="assets\images\Icons\cut-16x16.png" />
+    <Resource Include="assets\images\Icons\cut-32x32.png" />
+    <Resource Include="assets\images\Icons\database-16x16.png" />
+    <Resource Include="assets\images\Icons\database-export-32x32.png" />
+    <Resource Include="assets\images\Icons\database-import-32x32.png" />
+    <Resource Include="assets\images\Icons\database-search-16x16.png" />
+    <Resource Include="assets\images\Icons\debt-48x48.png" />
+    <Resource Include="assets\images\Icons\delete.png" />
+    <Resource Include="assets\images\Icons\Department-32x32.png" />
+    <Resource Include="assets\images\Icons\edit-16x16.png" />
+    <Resource Include="assets\images\Icons\employee-32x32.png" />
+    <Resource Include="assets\images\Icons\exit-32x32.png" />
+    <Resource Include="assets\images\Icons\expand-all-16x16.png" />
+    <Resource Include="assets\images\Icons\fund-32x32.png" />
+    <Resource Include="assets\images\Icons\get-money-32x32.png" />
+    <Resource Include="assets\images\Icons\import-export-po-32x32.png" />
+    <Resource Include="assets\images\Icons\index-16x16.png" />
+    <Resource Include="assets\images\Icons\index-32x32.png" />
+    <Resource Include="assets\images\Icons\industryzone-32x32.png" />
+    <Resource Include="assets\images\Icons\Invoice-32x32.png" />
+    <Resource Include="assets\images\Icons\logo-white.png" />
+    <Resource Include="assets\images\Icons\logo128x128.png" />
+    <Resource Include="assets\images\Icons\logo16x16.png" />
+    <Resource Include="assets\images\Icons\logo32x32.png" />
+    <Resource Include="assets\images\Icons\logo64x64.png" />
+    <Resource Include="assets\images\Icons\new-16x16.png" />
+    <Resource Include="assets\images\Icons\new-32x32.png" />
+    <Resource Include="assets\images\Icons\next-48x48.png" />
+    <Resource Include="assets\images\Icons\open-16x16.png" />
+    <Resource Include="assets\images\Icons\open-32x32.png" />
+    <Resource Include="assets\images\Icons\origin32x32.png" />
+    <Resource Include="assets\images\Icons\paste-16x16.png" />
+    <Resource Include="assets\images\Icons\paste-32x32.png" />
+    <Resource Include="assets\images\Icons\payment-32x32.png" />
+    <Resource Include="assets\images\Icons\payment-48x48.png" />
+    <Resource Include="assets\images\Icons\position-32x32.png" />
+    <Resource Include="assets\images\Icons\prev-48x48.png" />
+    <Resource Include="assets\images\Icons\print-16x16.png" />
+    <Resource Include="assets\images\Icons\print-32x32.png" />
+    <Resource Include="assets\images\Icons\product-48x48.png" />
+    <Resource Include="assets\images\Icons\product-assemble-32x32.png" />
+    <Resource Include="assets\images\Icons\product-category-32x32.png" />
+    <Resource Include="assets\images\Icons\question-16x16.png" />
+    <Resource Include="assets\images\Icons\quotation-32x32.png" />
+    <Resource Include="assets\images\Icons\rate-32x32.png" />
+    <Resource Include="assets\images\Icons\reason-32x32.png" />
+    <Resource Include="assets\images\Icons\receipt-16x16.png" />
+    <Resource Include="assets\images\Icons\redo-16x16.png" />
+    <Resource Include="assets\images\Icons\refresh-16x16.png" />
+    <Resource Include="assets\images\Icons\refresh.png" />
+    <Resource Include="assets\images\Icons\region-32x32.png" />
+    <Resource Include="assets\images\Icons\report-32x32.png" />
+    <Resource Include="assets\images\Icons\right.ico" />
+    <Resource Include="assets\images\Icons\role-32x32.png" />
+    <Resource Include="assets\images\Icons\sale-order-32x32.png" />
+    <Resource Include="assets\images\Icons\sale-po-32x32.png" />
+    <Resource Include="assets\images\Icons\save-16x16.gif" />
+    <Resource Include="assets\images\Icons\save-16x16.png" />
+    <Resource Include="assets\images\Icons\save-24x24.png" />
+    <Resource Include="assets\images\Icons\save-as-16x16.png" />
+    <Resource Include="assets\images\Icons\save_add.png" />
+    <Resource Include="assets\images\Icons\search.png" />
+    <Resource Include="assets\images\Icons\sign-out-32x32.png" />
+    <Resource Include="assets\images\Icons\stock-holding-32x32.png" />
+    <Resource Include="assets\images\Icons\stock_transfer-32x32.png" />
+    <Resource Include="assets\images\Icons\stock_transfer-48x48.png" />
+    <Resource Include="assets\images\Icons\supplier-32x32.png" />
+    <Resource Include="assets\images\Icons\supplier-48x48.png" />
+    <Resource Include="assets\images\Icons\supplier-return-32x32.png" />
+    <Resource Include="assets\images\Icons\system-history-32x32.png" />
+    <Resource Include="assets\images\Icons\system-info-32x32.png" />
+    <Resource Include="assets\images\Icons\theme-16x16.png" />
+    <Resource Include="assets\images\Icons\transfer_left_right.png" />
+    <Resource Include="assets\images\Icons\undo-16x16.png" />
+    <Resource Include="assets\images\Icons\unit-32x32.png" />
+    <Resource Include="assets\images\Icons\upload.png" />
+    <Resource Include="assets\images\Icons\user-32x32.png" />
+    <Resource Include="assets\images\Icons\warehouse-32x32.png" />
+    <Resource Include="assets\images\Icons\warehouse-in-32x32.png" />
+    <Resource Include="assets\images\Icons\warehouse-in-48x48.png" />
+    <Resource Include="assets\images\Icons\warehouse-out-48x48.png" />
+    <Resource Include="assets\images\Icons\warehouse-po-32x32.png" />
+    <Resource Include="assets\images\Icons\zoom-16x16.png" />
+    <Resource Include="assets\images\Icons\zoom-32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\.NETFramework\v4.0\Microsoft.Expression.Blend.WPF.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

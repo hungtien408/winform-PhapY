@@ -1,0 +1,2 @@
+28/11/2013 4:03:43 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function 'insert_ketluanthuongtich' expects parameter '@SucKhoeGiamBangChu', which was not supplied.
+28/11/2013 4:03:52 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or function 'insert_ketluanthuongtich' expects parameter '@SucKhoeGiamBangChu', which was not supplied.

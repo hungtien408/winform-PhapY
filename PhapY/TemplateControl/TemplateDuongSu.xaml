@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="PhapY.TemplateControl.TemplateHoSo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1024" xmlns:my="clr-namespace:PhapY.uc">
+	
+    <Grid>
+        <!--<ToolBar Height="35" HorizontalAlignment="Stretch" Name="toolBar1" VerticalAlignment="Top">
+            <Button HorizontalAlignment="Left" Margin="12,0,0,0" Name="btnNhanVien" VerticalAlignment="Stretch" Click="btnNhanVien_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/PhapY;component/Images/patient.png" Width="24" Height="24" ToolTip="Danh sách nhân viên" />
+                        <Label Content="Danh sách đương sự" FontWeight="Bold" />
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+        </ToolBar>-->
+        <Grid HorizontalAlignment="Stretch" Name="Container" VerticalAlignment="Stretch">
+            <my:DanhSachHoSo HorizontalAlignment="Stretch" x:Name="danhSachNhanVien1" VerticalAlignment="Stretch" />
+        </Grid>
+    </Grid>
+</UserControl>

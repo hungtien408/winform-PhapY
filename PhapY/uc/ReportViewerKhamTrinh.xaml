@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="PhapY.uc.ReportViewerKhamTrinh"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:viewer="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800" Loaded="UserControl_Loaded">
+    <Grid>
+        <StackPanel Height="27" Name="stackPanel1" VerticalAlignment="Top" Orientation="Horizontal">
+            <Label Content="Mã H.Sơ từ:" Height="28" />
+            <TextBox Height="23" Name="txtMaHoSoTu" Width="120" />
+            <Label Content="Mã H.Sơ đến:" Height="28" />
+            <TextBox Height="23" Name="txtMaHoSoDen" Width="120" />
+            <Button IsDefault="True"  Content="OK" Height="23" Name="btnOK" Width="75" Margin="10,0,0,0" Click="btnOK_Click" />
+        </StackPanel>
+        <WindowsFormsHost Name="windowsFormsHost1" Margin="0,25,0,0">
+            <viewer:ReportViewer x:Name="viewerInstance" ZoomChange="viewerInstance_ZoomChange"/>
+        </WindowsFormsHost>
+        
+    </Grid>
+</UserControl>

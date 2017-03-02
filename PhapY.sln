@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhapY", "PhapY\PhapY.csproj", "{F7B9A1C4-94EB-4863-86BE-ACCCF94DF26E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{03E1D105-50F1-4537-8A14-7CBD1D81C4E6}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PhapY\\PhapY.csproj
+		SccProjectName1 = \u0022$/PhapY\u0022,\u0020BAAAAAAA
+		SccLocalPath1 = PhapY
+		SccProjectUniqueName2 = Setup\\Setup.vdproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Setup\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7B9A1C4-94EB-4863-86BE-ACCCF94DF26E}.Debug|x86.ActiveCfg = Debug|x86
+		{F7B9A1C4-94EB-4863-86BE-ACCCF94DF26E}.Debug|x86.Build.0 = Debug|x86
+		{F7B9A1C4-94EB-4863-86BE-ACCCF94DF26E}.Release|x86.ActiveCfg = Release|x86
+		{F7B9A1C4-94EB-4863-86BE-ACCCF94DF26E}.Release|x86.Build.0 = Release|x86
+		{03E1D105-50F1-4537-8A14-7CBD1D81C4E6}.Debug|x86.ActiveCfg = Debug
+		{03E1D105-50F1-4537-8A14-7CBD1D81C4E6}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

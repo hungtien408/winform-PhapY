@@ -1,0 +1,23 @@
+﻿<Window x:Class="PhapY.SubWindows.WindowInBanGiamDinhTinhDuc"
+        xmlns:my="clr-namespace:PhapY.Controls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit"
+        Title="In bản kết luận giám định pháp y về tình dục" Height="700" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Name="Container" Height="0"></Grid>
+        <my:MyDocumentViewer x:Name="documentViewer1" Margin="0,36,0,0" />
+        <ToolBar HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <Label Content="Cắt bớt:" />
+            <ComboBox Name="cbbCatBot" Width="30" SelectedIndex="0"/>
+            <Label Content="dòng" />
+            <Separator/>
+            <Label Content="Tp.Hồ Chí Minh, ngày:" FontStyle="Italic" FontSize="13pt" FontFamily="Times New Roman" />
+            <Custom:DatePicker xml:lang="vi-vn" x:Name="dpNgayThangNam" Margin="10,0,10,0" FirstDayOfWeek="Monday" VerticalContentAlignment="Center" Padding="5,0,5,0" />
+            <Separator/>
+            <Grid>
+                <Button Content="Cập nhật" Height="23" HorizontalAlignment="Left" Name="btnUpdate" VerticalAlignment="Center" Width="75" Click="btnUpdate_Click" IsDefault="True" Margin="0,0,20,0" />
+            </Grid>
+        </ToolBar>
+    </Grid>
+</Window>

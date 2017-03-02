@@ -1,0 +1,73 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="PhapY.SubWindows.PhuLucTuThi"
+        Title="Phụ lục tử thi" Height="700" Width="600" FontFamily="Times New Roman" FontSize="13pt" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="23" />
+            <Setter Property="Padding" Value="0,0,0,0" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <VisualBrush
+                    TileMode="Tile"
+                    Viewport="0,-0.98,3,20"
+                    ViewportUnits="Absolute"
+                    Viewbox="0,0,3,20"
+                    ViewboxUnits="Absolute">
+                        <VisualBrush.Visual>
+                            <Rectangle
+                            Fill="Black"
+                            Width="1" Height="1" />
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ScrollViewer Margin="0,0,0,30">
+            <Grid x:Name="Container" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <TextBlock HorizontalAlignment="Left" Margin="27,8,0,0" TextWrapping="Wrap" Text="SỞ Y TẾ TP.HCM" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="8,29.466,0,0" TextWrapping="Wrap" Text="TRUNG TÂM PHÁP Y" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="22,50.932,0,0" TextWrapping="Wrap" Text="Số HS:" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+                <TextBlock Name="tblSoHoSo" HorizontalAlignment="Left" Margin="79.433,50.932,0,0" TextWrapping="Wrap" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment" Text="{Binding SoHoSo}"/>
+                <TextBlock HorizontalAlignment="Left" Margin="164,89.398,0,0" TextWrapping="Wrap" Text="PHỤ LỤC DANH MỤC HỒ SƠ" VerticalAlignment="Top" FontWeight="Bold"/>
+                <CheckBox x:Name="chkBanGiamDinhYPhapTuThi" Content="Bản giám định y pháp tử thi." HorizontalAlignment="Left" Margin="45,130,0,0" VerticalAlignment="Top" IsChecked="{Binding BanGiamDinhYPhapTuThi}"/>
+                <CheckBox x:Name="chkBanKetLuanTuThi" Content="Bản kết luận giám định pháp y về tử thi." HorizontalAlignment="Left" Margin="45,152,0,0" VerticalAlignment="Top" IsChecked="{Binding BanKetLuanTuThi}"/>
+                <CheckBox x:Name="chkQuyetDinhTrungCauGiamDinh" Content="Quyết định trưng cầu giám định." HorizontalAlignment="Left" Margin="45,174,0,0" VerticalAlignment="Top" IsChecked="{Binding QuyetDinhTrungCauGiamDinh}"/>
+                <CheckBox x:Name="chkGiayBaoTu" Content="Giấy báo tử." HorizontalAlignment="Left" Margin="45,196,0,0" VerticalAlignment="Top" IsChecked="{Binding GiayBaoTu}"/>
+                <CheckBox x:Name="chkGiayUopXac" Content="Giấy ướp xác." HorizontalAlignment="Left" Margin="45,218,0,0" VerticalAlignment="Top" IsChecked="{Binding GiayUopXac}"/>
+                <CheckBox x:Name="chkCongHam" Content="Công hàm." HorizontalAlignment="Left" Margin="45,240,0,0" VerticalAlignment="Top" IsChecked="{Binding CongHam}"/>
+                <CheckBox x:Name="chkHoChieu" Content="Hộ chiếu (visa)." HorizontalAlignment="Left" Margin="45,262,0,0" VerticalAlignment="Top" IsChecked="{Binding HoChieu}"/>
+                <CheckBox x:Name="chkSoDoPhacHoaNguoiBiNan" Content="Sơ đồ phác hoạ người bị nạn." Margin="45,284,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding SoDoPhacHoaNguoiBiNan}"/>
+                <CheckBox x:Name="chkXetNghiemNongDoRuou" Content="Xét nghiệm nồng độ rượu/máu." HorizontalAlignment="Left" Margin="45,306,0,0" VerticalAlignment="Top" IsChecked="{Binding XetNghiemNongDoRuou}"/>
+                <CheckBox x:Name="chkXetNghiemMorPhin" Content="Xét nghiệm morphin/máu." Margin="45,328,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding XetNghiemMorPhin}"/>
+                <CheckBox x:Name="chkXetNghiemSinhHoa" Content="Xét nghiệm sinh hoá." Margin="45,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding XetNghiemSinhHoa}"/>
+                <CheckBox x:Name="chkXetNghiemHIV" Content="Xét nghiệm HIV." Margin="45,372,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding XetNghiemHIV}"/>
+                <CheckBox x:Name="chkPhieuXetNghiemGPB" Content="Phiếu xét nghiệm GPB khám nghiệm tử thi." Margin="45,394,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding PhieuXetNghiemGPB}"/>
+                <CheckBox x:Name="chkBienBanXemXetDauVetCoThe" Content="Biên bản xem xét dấu vết cơ thể." Margin="45,416,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding BienBanXemXetDauVetCoThe}"/>
+                <CheckBox x:Name="chkBanKetLuanGiamDinhPhapYVeHoaPhap" Content="Bản kết luận Giám Định Pháp Y về hoá pháp." Margin="45,438,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding BanKetLuanGiamDinhPhapYVeHoaPhap}"/>
+                <CheckBox x:Name="chkKhac" Content="Khác:" Margin="45,460,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding Khac}"/>
+                <TextBox x:Name="txtNoiDungKhac" HorizontalAlignment="Left" Margin="110.573,460,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408.536" HorizontalContentAlignment="Center" Text="{Binding NoiDungKhac}"/>
+                <TextBlock HorizontalAlignment="Left" Margin="90.746,482,0,0" TextWrapping="Wrap" Text="Tổng cộng:" FontWeight="Bold" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtTongCong" HorizontalAlignment="Left" Margin="184.466,482,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76.844" HorizontalContentAlignment="Center" d:LayoutOverrides="HorizontalAlignment" Text="{Binding TongCong}"/>
+                <TextBlock Margin="265.465,482,0,0" TextWrapping="Wrap" Text="mục" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <TextBlock Margin="187.693,504,0,0" TextWrapping="Wrap" Text="TPHCM, ngày" VerticalAlignment="Top" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Name="lblCurrentDate" Content="20" Margin="300.579,504,0,0" VerticalAlignment="Top" Padding="0" HorizontalAlignment="Left" Width="26.7" HorizontalContentAlignment="Center"/>
+                <TextBlock Margin="331.279,504,0,0" TextWrapping="Wrap" Text="tháng" VerticalAlignment="Top" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Name="lblCurrentMonth" Content="12" Margin="377.799,504,0,0" VerticalAlignment="Top" Padding="0" HorizontalAlignment="Left" Width="26.7" HorizontalContentAlignment="Center"/>
+                <TextBlock Margin="408.499,504,0,0" TextWrapping="Wrap" Text="năm" VerticalAlignment="Top" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label  Name="lblCurrentYear" Content="2010" Margin="448.386,504,0,0" VerticalAlignment="Top" Padding="0" HorizontalAlignment="Left" Width="43.7" HorizontalContentAlignment="Center"/>
+                <TextBlock Margin="283.47,526,0,0" TextWrapping="Wrap" Text="(ký và ghi rõ họ tên)" VerticalAlignment="Top" HorizontalAlignment="Left" FontStyle="Italic"/>
+            </Grid>
+        </ScrollViewer>
+        <StackPanel HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <Button Content="Cập nhật" FontSize="14" Height="23" Margin="0,0,10,0" Name="btnUpdate" Padding="10,0,10,0" Click="btnUpdate_Click" />
+            <Button Content="Print" FontSize="14" Height="23" Margin="0,0,0,0" Name="btnPrint" Padding="10,0,10,0" Click="btnPrint_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

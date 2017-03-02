@@ -1,0 +1,20 @@
+19/06/2014 10:58:02 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 10:58:14 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 10:58:17 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 10:58:20 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 10:58:30 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 10:58:35 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 10:58:38 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 10:58:54 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 11:35:13 AM ==> Void ValidateElement(System.Windows.UIElement) Lỗi: Value cannot be null.
+Parameter name: Children of 'System.Windows.Controls.UIElementCollection' cannot be null. Object derived from UIElement expected.
+19/06/2014 11:50:52 AM ==> Void ThrowException(System.String, System.Exception, Int32, Int32, System.Uri, System.Windows.Markup.XamlObjectIds, System.Windows.Markup.XamlObjectIds, System.Type) Lỗi: Cannot create instance of 'ReportViewer' defined in assembly 'Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'. Exception has been thrown by the target of an invocation.  Error at object 'windowsFormsHost1' in markup file 'PhapY;component/uc/reportviewer.xaml' Line 18 Position 14.
+19/06/2014 11:50:59 AM ==> Void ThrowException(System.String, System.Exception, Int32, Int32, System.Uri, System.Windows.Markup.XamlObjectIds, System.Windows.Markup.XamlObjectIds, System.Type) Lỗi: Cannot create instance of 'ReportViewer' defined in assembly 'Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'. Exception has been thrown by the target of an invocation.  Error at object 'windowsFormsHost1' in markup file 'PhapY;component/uc/reportviewerkhamtrinh.xaml' Line 18 Position 14.

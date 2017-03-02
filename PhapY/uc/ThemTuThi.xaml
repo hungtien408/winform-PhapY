@@ -1,0 +1,309 @@
+﻿<UserControl x:Class="PhapY.uc.ThemTuThi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit"
+             xmlns:my="clr-namespace:PhapY.Controls"
+             xmlns:my1="clr-namespace:PhapY.uc"
+             mc:Ignorable="d" 
+             d:DesignHeight="4700" d:DesignWidth="800" FontFamily="Times New Roman" FontSize="14" Width="779.685039370079">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Custom:DatePicker}">
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <VisualBrush
+                    TileMode="Tile"
+                    Viewport="0,0,3,21"
+                    ViewportUnits="Absolute"
+                    Viewbox="0,0,3,21"
+                    ViewboxUnits="Absolute">
+                        <VisualBrush.Visual>
+                            <Rectangle
+                            Fill="Black"
+                            Width="1" Height="1" />
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="VerticalContentAlignment" Value="Bottom" />
+            <Setter Property="Height" Value="23" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="23" />
+            <Setter Property="Padding" Value="0,3,0,0" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <VisualBrush
+                    TileMode="Tile"
+                    Viewport="0,-0.98,3,20"
+                    ViewportUnits="Absolute"
+                    Viewbox="0,0,3,20"
+                    ViewboxUnits="Absolute">
+                        <VisualBrush.Visual>
+                            <Rectangle
+                            Fill="Black"
+                            Width="1" Height="1" />
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="HorizontalRadioButtonList" TargetType="{x:Type ListBox}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Background="Transparent" Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style TargetType="{x:Type ListBoxItem}" >
+                        <Setter Property="Margin" Value="5" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                    <Border BorderThickness="0" Background="Transparent">
+                                        <RadioButton FlowDirection="RightToLeft" FontWeight="Bold" FontStyle="Italic" Focusable="False" IsHitTestVisible="False" IsChecked="{TemplateBinding IsSelected}">
+                                            <ContentPresenter />
+                                        </RadioButton>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBox}">
+                        <Border BorderThickness="0" Padding="0" BorderBrush="Transparent" Background="Transparent" Name="Bd" SnapsToDevicePixels="True">
+                            <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Name="Container">
+        <ScrollViewer Name="scroll1"  VerticalScrollBarVisibility="Visible" Margin="12,0,5,43">
+            <Grid>
+                <Label HorizontalAlignment="Left" VerticalAlignment="Top" Content="ĐƠN VỊ CHỦ QUẢN............." FontSize="13pt"  />
+                <Label Content="CƠ QUAN GIÁM ĐỊNH......" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13pt" />
+                <Label Content="_____________" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="13pt" />
+                <Label Content="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" VerticalAlignment="Top" HorizontalAlignment="Right" FontWeight="Bold" FontSize="13pt" />
+                <TextBlock Margin="0,20,74,0" VerticalAlignment="Top" Text="Độc Lập - Tự Do - Hạnh Phúc" FontWeight="Bold" HorizontalAlignment="Right" Width="222" TextDecorations="Underline" FontSize="13pt" />
+                <Label Content="Số" HorizontalAlignment="Left" Margin="33,55,0,0" VerticalAlignment="Top" FontSize="13pt" />
+                <TextBox Margin="50,55,0,0" x:Name="txtSoHoSo" Width="100" Text="{Binding SoHoSo}"  d:LayoutOverrides="HorizontalAlignment" HorizontalContentAlignment="Center"  />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,55,0,0">
+                    <Label Content="Tp.Hồ Chí Minh, ngày" FontStyle="Italic" FontSize="13pt" />
+                    <Label Name="lblNgay" FontStyle="Italic" Content="20" HorizontalContentAlignment="Center" Margin="10,0,10,0" FontSize="13pt" />
+                    <Label Content="tháng" FontStyle="Italic" FontSize="13pt" />
+                    <Label Name="lblThang" FontStyle="Italic" Content="10" HorizontalContentAlignment="Center" Margin="10,0,10,0" FontSize="13pt" />
+                    <Label Content="năm" FontStyle="Italic" FontSize="13pt" />
+                    <Label Name="lblNam" FontStyle="Italic" Content="2014" HorizontalContentAlignment="Center" Margin="10,0,0,0" FontSize="13pt" />
+                </StackPanel>
+                <!--<Label Content="BIÊN BẢN GIÁM ĐỊNH PHÁP Y TỬ THI" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontStyle="Normal" FontSize="20" FontFamily="Times New Roman" Margin="0,120,0,0" Height="30"></Label>-->
+                <Label Content="BẢN KẾT LUẬN GIÁM ĐỊNH PHÁP Y VỀ TỬ THI" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontStyle="Normal" FontSize="20" FontFamily="Times New Roman" Margin="0,120,0,0" Height="30"></Label>
+                <Border Margin="0,160,0,47" BorderBrush="Silver" BorderThickness="0" HorizontalAlignment="Stretch" Name="border1" VerticalAlignment="Stretch" CornerRadius="3" Padding="10">
+                    <Grid>
+                        <!--<Label Content="Số hồ sơ:" Margin="1.5,0,0,0" HorizontalAlignment="Left"/>
+                        <TextBox Margin="59.937,0,0,0" x:Name="txtSoHoSo" Width="130" Text="{Binding SoHoSo}"  d:LayoutOverrides="HorizontalAlignment" HorizontalContentAlignment="Center"  />-->
+                        <Label Content="Căn    cứ    Quyết    định    trưng    cầu    giám    định    pháp    y    tử    thi    số:" Margin="60,264,0,0" FontSize="12pt" FontWeight="Normal"/>
+                        <TextBox Margin="565,264,0,0" Name="txtQDTCGDSo" Width="140" Text="{Binding QDTCGDSo}" HorizontalContentAlignment="Center"  />
+                        <Label Content="," Margin="0,263,20,0" HorizontalAlignment="Right"/>
+                        <Label Content="ngày:" Margin="0,291,0,0" FontSize="12pt" FontWeight="Normal"/>
+                        <Custom:DatePicker xml:lang="vi-vn" x:Name="dpKyNgay" Margin="36,292,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FirstDayOfWeek="Monday" SelectedDate="{Binding KyNgay}" />
+                        <!--<Label Content="của cơ quan CSĐT Công an:" Margin="150,267,0,0" HorizontalAlignment="Left" Width="177" />-->
+                        <Label Content="của" Margin="150,291,0,0" HorizontalAlignment="Left" Width="25" FontSize="12pt"/>
+                        <TextBox Margin="176,293,0,0" x:Name="txtCoQuanTrungCau"  HorizontalAlignment="Left" Text="{Binding CoQuanTrungCau}" Width="308" HorizontalContentAlignment="Center" />
+                        <!--<Label Content="," Margin="345,293,0,0" HorizontalAlignment="Stretch" />
+                        <TextBox Margin="350,293,0,0" x:Name="txtTinhThanh" Text="{Binding TinhThanh}" Width="133.79" />-->
+                        <Label HorizontalAlignment="Left" Content="(ghi rõ tên cơ quan trưng cầu)." VerticalAlignment="Top" Margin="490,293,0,0" FontStyle="Italic" FontWeight="Normal" FontSize="12pt"/>
+                        <Label Content="Chúng tôi:" HorizontalAlignment="Stretch" Margin="60,323,0,0" FontSize="12pt" FontWeight="Normal"/>
+                        <Label Content="(ghi   rõ   họ   tên   và   chức   danh   của   giám   định   viên;   những   người   giúp   việc" HorizontalAlignment="Stretch" Margin="140,323,0,0" FontWeight="Normal" FontStyle="Italic" FontSize="12pt"/>
+                        <Label Content="cho  giám  định  viên)" HorizontalAlignment="Left" Margin="0,345,0,0" FontWeight="Normal" FontStyle="Italic" FontSize="12pt"/>
+                        <!--<TextBlock Margin="60,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40">
+                        Chúng tôi: <Italic>(ghi   rõ  họ  tên và chức danh của giám định viên; những người giúp việc cho giám định viên)</Italic>
+                        </TextBlock>-->
+                        <my:RichTextBox Height="63" HorizontalAlignment="Stretch" x:Name="txtNguoiGiamDinh" VerticalAlignment="Top" Margin="12,369,86.96,0" Text="{Binding NguoiGiamDinh}" />
+                        <Button Content="Chọn BS" Height="23" Margin="0,380,8,0" x:Name="btnChonBS" VerticalAlignment="Top" HorizontalAlignment="Right" Padding="10,1" Click="btnChonBS_Click" />
+                        <!--<Label Content="1." HorizontalAlignment="Left" Margin="1.5,110,0,0" />
+                        <Label Content="2." HorizontalAlignment="Left" Margin="1.5,129,0,0" />
+                        <Label Content="3." HorizontalAlignment="Left" Margin="1.5,149,0,0" />-->
+                        <!--<Label Content="Đã tiến hành giám định vụ:" HorizontalAlignment="Left" Margin="0,175,0,0" />-->
+                        <TextBlock Width="140"  TextWrapping="Wrap" Height="205" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,26,0,0" TextAlignment="Center" Padding="10,60,10,0">
+                            Ảnh <LineBreak/> nhận dạng <LineBreak/> (cỡ 4x6)
+                        </TextBlock>
+                        <StackPanel Width="140" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,26,0,0">
+                            <Border BorderBrush="Silver" BorderThickness="1" Height="205">
+                                <Image HorizontalAlignment="Stretch" Name="imgHinhDuongSu" Stretch="Uniform" VerticalAlignment="Stretch" Source="{Binding HinhDuongSu}" />
+                            </Border>
+                            <Button Content="Browse" Margin="0,5,0,0" Name="btnBrowse" Click="btnBrowse_Click"></Button>
+                        </StackPanel>
+                        <!--<TextBlock Width="123" Text="Ảnh của người được giám định (cỡ 4x6)"  TextWrapping="Wrap" Height="168" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,203,0,0" TextAlignment="Center" Padding="10,60,10,0"></TextBlock>
+                        <StackPanel Width="123" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,203,0,0">
+                            <Border BorderBrush="Silver" BorderThickness="1" Height="167">
+                                <Image HorizontalAlignment="Stretch" Name="imgHinhDuongSu" Stretch="Uniform" VerticalAlignment="Stretch" Source="{Binding HinhDuongSu}" />
+                            </Border>
+                            <Button Content="Browse" Margin="0,5,0,0" Name="btnBrowse" Click="btnBrowse_Click"></Button>
+                        </StackPanel>-->
+
+                        <Label Content="Họ và tên:" Margin="158,20,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="226,20,0,0" Name="txtHoTen" Width="480" Text="{Binding HoTen}" CharacterCasing="Upper" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontWeight="Bold" TextChanged="txtHoTen_TextChanged"  />
+                        <Label Content="Năm sinh:" Margin="156,45,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="225,45,0,0" Name="txtNamSinh" Width="320" Text="{Binding NamSinh}" HorizontalContentAlignment="Center"  />
+                        <Label Content="Giới:" Margin="0,45,135,0" FontStyle="Italic" FontSize="12pt" HorizontalAlignment="Right"/>
+                        <ListBox Name="lstGioiTinh" Height="24" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Style="{StaticResource HorizontalRadioButtonList}" Margin="601.023,44.9,0,0" SelectedValuePath="Tag" SelectedValue="{Binding GioiTinh}" FontSize="12pt">
+                            <ListBoxItem Tag="True">Nam</ListBoxItem>
+                            <ListBoxItem Tag="False">Nữ</ListBoxItem>
+                        </ListBox>
+                        <Label Content="Địa chỉ:" Margin="156,70,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="210,70,20,0" Name="txtDiaChi"  HorizontalAlignment="Stretch" Text="{Binding DiaChi}" HorizontalContentAlignment="Center"  />
+                        <Label Content="Trình độ văn hóa:" Margin="156,95,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="275,95,20,0" Name="txtTrinhDoVanHoa"  HorizontalAlignment="Stretch" Text="{Binding TrinhDoVanHoa}" HorizontalContentAlignment="Center"  />
+                        <Label Content="Dân tộc:" Margin="156,120,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="215,120,110,0" x:Name="txtDanToc" Width="262" Text="{Binding DanToc}"  d:LayoutOverrides="HorizontalAlignment" HorizontalContentAlignment="Center" />
+                        <Label Content="Quốc Tịch:" Margin="478,120,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox HorizontalAlignment="Stretch" Margin="552.73,120,20,0" Name="txtQuocTich" Text="{Binding QuocTich}" HorizontalContentAlignment="Center" />
+                        <Label Content="Tôn giáo:" Margin="156,145,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="222,145,20,0" Name="txtTonGiao"  HorizontalAlignment="Stretch" Text="{Binding TonGiao}" HorizontalContentAlignment="Center"  />
+                        <Label Content="Nghề nghiệp:" Margin="156,170,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="246,170,20,0" Name="txtNgheNghiep"  HorizontalAlignment="Stretch" Text="{Binding NgheNghiep}" HorizontalContentAlignment="Center"  />
+                        <Label Content="Xảy ra:" Margin="156,195,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="206,195,20,0" Name="txtXayRa"  HorizontalAlignment="Stretch" Text="{Binding XayRa}" HorizontalContentAlignment="Center"  />
+                        <Label Content="Tại:" Margin="156,220,0,0" FontStyle="Italic" FontSize="12pt"/>
+                        <TextBox Margin="184,220,20,0" Name="txtTai"  HorizontalAlignment="Stretch" Text="{Binding Tai}" HorizontalContentAlignment="Center"  />
+                        <!--<Label Content="Điều tra viên:" Margin="158,387,0,0" FontStyle="Italic" />
+                        <TextBox Margin="240,387,0,0" Name="txtDieuTraVien" Width="232" Text="{Binding DieuTraVienKLTT}" HorizontalContentAlignment="Center" d:LayoutOverrides="HorizontalAlignment" />
+                        <Label Content="Điện thoại:" Margin="478,387,0,0" FontStyle="Italic" />
+                        <TextBox HorizontalAlignment="Stretch" Margin="547,387,1,0" Name="txtDienThoaiDTV" Text="{Binding DienThoaiDTVKLTT}" HorizontalContentAlignment="Center" />-->
+                        <Label Content="Đã tiến hành giám định tử thi" HorizontalAlignment="Left" Margin="60,434,0,0" FontSize="12pt"/>
+                        <TextBox Margin="265,434,60,0" Name="txtHoTen1"  HorizontalAlignment="Stretch" Text="{Binding HoTen1}" HorizontalContentAlignment="Center"  CharacterCasing="Upper"/>
+                        <Label Content="(ghi rõ" HorizontalAlignment="Right" Margin="0,434,20,0" FontStyle="Italic" FontWeight="Normal" FontSize="12pt"/>
+                        <Label Content="họ    và    tên    của    người    được    giám    định);" HorizontalAlignment="Left" Margin="0,457,0,0" FontStyle="Italic" FontWeight="Normal" FontSize="12pt"/>
+                        <Label Content="vào    hồi" HorizontalAlignment="Right" Margin="0,457,328,0" FontSize="12pt" FontWeight="Normal"/>
+                        <my1:TimeTextbox Margin="0,457,198,0" x:Name="txtGioPhutBatDau" Hours="{Binding GioBatDau}" Minutes="{Binding PhutBatDau}" VerticalAlignment="Top" HorizontalAlignment="Right" />
+                        <Label Content=", ngày" HorizontalAlignment="Right" Margin="0,457,150,0" FontSize="12pt" FontWeight="Normal"/>
+                        <Custom:DatePicker xml:lang="vi-vn" FirstDayOfWeek="Monday" HorizontalAlignment="Right" Margin="0,457,10,0" x:Name="dpNgayBatDau" SelectedDate="{Binding NgayBatDau}" VerticalAlignment="Top" Width="140" />
+                        <Label Content=", kết thúc hồi" HorizontalAlignment="Left" Margin="510,433,0,0"  Visibility="Hidden"/>
+                        <my1:TimeTextbox Margin="591,433,0,0" x:Name="txtGioPhutKetThuc" Hours="{Binding GioKetThuc}" Minutes="{Binding PhutKetThuc}" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Hidden"/>
+                        <Label Content="ngày" HorizontalAlignment="Left" Margin="0,456,0,0"  Visibility="Hidden"/>
+                        <Custom:DatePicker xml:lang="vi-vn" FirstDayOfWeek="Monday" HorizontalAlignment="Left" Margin="33,456,0,0" x:Name="dpNgayKetThuc" SelectedDate="{Binding NgayKetThuc}" VerticalAlignment="Top" Width="120"  Visibility="Hidden"/>
+                        <Label Content="tại:" HorizontalAlignment="Left" Margin="0,482,0,0" FontSize="12pt" FontWeight="Normal"/>
+                        <TextBox Margin="20,482,340,0" x:Name="txtDiaDiemGiamDinh" Text="{Binding DiaDiemGiamDinh}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                        <Label Content="(ghi  địa  điểm,  điều kiện  tiến  hành  giám  định)." HorizontalAlignment="Right" Margin="0,482,10,0" FontStyle="Italic" FontWeight="Normal" FontSize="12pt"/>
+                        <!--<Label Content="kiện  tiến  hành  giám  định)." HorizontalAlignment="Left" Margin="0,459,20,0" FontStyle="Italic" FontWeight="Normal"/>-->
+                        <!--<Label Content="," HorizontalAlignment="Left" Margin="246,482,340,0"/>
+                        <TextBox Margin="250,482,340,0" x:Name="txtDieuKienAnhSangThoiTiet" Text="{Binding DieuKienAnhSangThoiTiet}" HorizontalAlignment="Stretch"/>-->
+                        <Label Content="Với sự chứng kiến của:" HorizontalAlignment="Left" Margin="60,509,0,0" FontSize="12pt"/>
+                        <my:RichTextBox Height="123.5" HorizontalAlignment="Stretch" x:Name="txtNguoiChungKien" VerticalAlignment="Top" Margin="23,532,1,0" Text="{Binding NguoiChungKien}" />
+                        <!--<Label Content="1" HorizontalAlignment="Left" Margin="12,437,0,0" />
+                        <Label Content="2" HorizontalAlignment="Left" Margin="12,464,0,0" Height="Auto" />
+                        <Label Content="3" HorizontalAlignment="Left" Margin="12,484,0,0" Height="Auto" />
+                        <Label Content="4" HorizontalAlignment="Left" Margin="12,504,0,0" Height="Auto" />
+                        <Label Content="5" HorizontalAlignment="Left" Margin="12,524,0,0" Height="Auto" />
+                        <Label Content="6" HorizontalAlignment="Left" Margin="12,544,0,0" Height="Auto" />-->
+                        <Label Content="I. TÌNH HÌNH SỰ VIỆC:" Height="28" HorizontalAlignment="Left" Margin="0,660,0,0" VerticalAlignment="Top" FontSize="20" />
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Height="165" HorizontalAlignment="Stretch" Margin="0,688,0,0" x:Name="txtNoiDungSuViec" VerticalAlignment="Top" Text="{Binding NoiDungSuViec}">
+                        </my:RichTextBox>
+                        <Label Content="Tiền sử cá nhân:" Height="20" HorizontalAlignment="Left" Margin="0,865,0,0" VerticalAlignment="Top" FontSize="12pt" />
+                        <!--<my:RichTextBox BorderBrush="White" BorderThickness="1" HorizontalAlignment="Stretch" Margin="85,862,0,0" x:Name="txtTienSuCaNhan" VerticalAlignment="Top" Text="{Binding TienSuCaNhan}"/>-->
+                        <TextBox Margin="115,862,0,0" Name="txtTienSuCaNhan" Width="610" Text="{Binding TienSuCaNhan}" HorizontalAlignment="Left"/>
+                        <Label Content="II. NGHIÊN CỨU HỒ SƠ, TÀI LIỆU:" FontSize="20" Height="28" HorizontalAlignment="Left" Margin="0,894,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBlock Margin="12,922,0,0" VerticalAlignment="Top" FontSize="12pt">
+                            1. Hồ sơ tài liệu: <Italic>(Liệt kê các hồ sơ của cơ quan trưng cầu cung cấp)</Italic>
+                        </TextBlock>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="0,942,0,0" x:Name="txtHoSoTaiLieu" Text="{Binding HoSoTaiLieu}" Height="87" VerticalAlignment="Top" />
+                        <TextBlock Margin="12,1031,0,0" VerticalAlignment="Top" FontSize="12pt">
+                            2. Nội dung yêu cầu giám định: <Italic>(Ghi đầy đủ nội dung yêu cầu giám định của cơ quan trưng cầu).</Italic>
+                        </TextBlock>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="0,1051,0,0" x:Name="txtNoiDungYeuCau" Text="{Binding NoiDungYeuCau}" Height="87" VerticalAlignment="Top" />
+                        <TextBlock Margin="12,1139,0,0" VerticalAlignment="Top" FontSize="12pt" TextWrapping="Wrap">
+                            3. Nghiên cứu hồ sơ bệnh án, bản kết luận giám định trước, v.v...: <Italic>(nếu có: Ghi thông tin định hướng cho khám và kết luận).</Italic>
+                        </TextBlock>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="0,1177,0,0" x:Name="txtNghienCuuHoSoBenhAn" Text="{Binding NghienCuuHoSoBenhAn}" Height="87" VerticalAlignment="Top" />
+                        <TextBlock FontSize="20" Height="28" HorizontalAlignment="Left" Margin="0,1274,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" >
+                            <Bold>III. PHẦN GIÁM ĐỊNH:</Bold><Italic>(Áp dụng quy trình tương ứng đã được ban hành).</Italic>
+                        </TextBlock>
+
+                        <Label Content="1. Khám ngoài:" Margin="9,1308,0,0" FontSize="12pt"/>
+                        <Label Content="1.1 Nhận dạng và tình trạng tử thi:" Margin="25,1331,0,0" FontSize="12pt"/>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Height="126" HorizontalAlignment="Stretch" Margin="25,1356,0,0" x:Name="txtNhanDangVaTinhTrangTuThi" VerticalAlignment="Top" Text="{Binding NhanDangVaTinhTrangTuThi}"/>
+                        <Label Content="1.2 Các dấu vết thương tích:" Margin="25,1484,0,0" FontSize="12pt"/>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" HorizontalAlignment="Stretch" Margin="25,1509,0,0" x:Name="txtCacDauVetThuongTich" Text="{Binding CacDauVetThuongTich}" Height="126" VerticalAlignment="Top"/>
+                        <Label Content="2. Khám trong:" Margin="12,1639,0,0" VerticalAlignment="Top" FontSize="12pt"/>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="25,1664,0,0" x:Name="txtKhamTrong" Text="{Binding KhamTrong}" Height="767" VerticalAlignment="Top" />
+                        <TextBlock TextWrapping="Wrap" Margin="8,2442,0,-302" FontStyle="Italic" FontSize="12pt">
+                            <Bold>3. Cận lâm sàng: </Bold> <Italic>(do giám định viên chỉ định để phục vụ cho kết luận giám định như: Xét nghiệm mô bệnh học, độc chất, ADN, các kỹ thuật, cận lâm sàng cần thiết khác, v.v...)</Italic>
+                        </TextBlock>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="25,2478,0,0" x:Name="txtKetQuaCanLamSang" Text="{Binding KetQuaCanLamSang}" Height="580" VerticalAlignment="Top" />
+                        <!--<Label Content="3.1 Kết quả xét nghiệm mô bệnh học:" Margin="25,2478,0,0" VerticalAlignment="Top" FontSize="12pt"/>
+                        <Label Content="(Số vi thể:" Margin="284,2478,0,0" HorizontalAlignment="Left" FontSize="12pt"/>
+                        <TextBox Margin="357,2478,0,0" x:Name="txtSoViThe1" Text="{Binding SoViThe1}" Width="46.724" FontSize="12pt"/>
+                        <Label Content="/" Margin="404,2478,0,0" FontSize="12pt"/>
+                        <TextBox Margin="408,2478,0,0" x:Name="txtSoViThe2" Text="{Binding SoViThe2}" Width="41.11" FontSize="12pt"/>
+                        <Label Content=")." Margin="453,2478,0,0" />
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="25,2509,0,0" x:Name="txtXetNghiemTeBao_MoBenhHoc" Text="{Binding XetNghiemTeBao_MoBenhHoc}" Height="87" VerticalAlignment="Top" />
+                        <Label Content="3.2 Kết quả xét nghiệm độc chất:" Margin="25,2598,0,0" VerticalAlignment="Top" FontSize="12pt"/>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="25,2622,0,0" x:Name="txtDocChat" Text="{Binding DocChat}" Height="87" VerticalAlignment="Top" />
+                        <Label Content="3.3 Kết quả xét nghiệm ADN:" Margin="25,2708,0,0" VerticalAlignment="Top" FontSize="12pt"/>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="25,2732,0,0" x:Name="txtADN" Text="{Binding ADN}" Height="87" VerticalAlignment="Top" />
+                        <Label Content="3.4 Các kỹ thuật cận lâm sàng khác:" Margin="25,2831,0,0" VerticalAlignment="Top" FontSize="12pt"/>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="25,2856,0,0" x:Name="txtCacXetNghiemKhac" Text="{Binding CacXetNghiemKhac}" Height="87" VerticalAlignment="Top" />
+                        <TextBlock Margin="25,2950,0,0" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="12pt">
+                            <Bold>4. Kết quả của cận lâm sàng</Bold> <Italic>(nếu có)</Italic>:
+                        </TextBlock>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Margin="25,2973,0,0" x:Name="txtKetQuaCanLamSang" Text="{Binding KetQuaCanLamSang}" Height="87" VerticalAlignment="Top" />-->
+                        <Label Content="IV. PHẦN KẾT LUẬN:" FontSize="20" Height="28" HorizontalAlignment="Left" Margin="0,3065,0,0" VerticalAlignment="Top"/>
+                        <TextBlock FontStyle="Italic" Margin="22,3099,0,0" VerticalAlignment="Top" FontSize="12pt">
+                            <Bold>1. Dấu hiệu chính qua giám định:</Bold> <Italic>(dấu hiệu liên quan đến nội dung trưng cầu giám định)</Italic>
+                        </TextBlock>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Height="108" HorizontalAlignment="Stretch" Margin="0,3119,0,0" x:Name="txtChanDoanYPhap" VerticalAlignment="Top" Text="{Binding ChanDoanYPhap}"/>
+                        <TextBlock FontStyle="Italic" Margin="22,3241,0,0" VerticalAlignment="Top" FontSize="12pt">
+                            <Bold>2. Nguyên nhân chết:</Bold> <Italic>(treo cổ, ngộ độc thuốc trừ sâu, bị đâm thủng tim,...)</Italic>
+                        </TextBlock>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Height="108" HorizontalAlignment="Stretch" Margin="0,3264,0,0" x:Name="txtNguyenNhanChet" VerticalAlignment="Top" Text="{Binding NguyenNhanChet}"/>
+                        <TextBlock FontStyle="Italic" Margin="22,3381,0,0" VerticalAlignment="Top" FontSize="12pt">
+                            <Bold>3. Kết luận khác:</Bold> <Italic>(nếu có)</Italic>
+                        </TextBlock>
+                        <my:RichTextBox BorderBrush="White" BorderThickness="1" Height="108" HorizontalAlignment="Stretch" Margin="0,3404,0,0" x:Name="txtKetLuanKhac" VerticalAlignment="Top" Text="{Binding KetLuanKhac}"/>
+                        <Label Content="PHỤ MỔ" FontSize="20" Height="28" HorizontalAlignment="Left" Margin="81,3517,0,0" VerticalAlignment="Top" />
+                        <Label Content="GIÁM ĐỊNH VIÊN" FontSize="20" Height="28" HorizontalAlignment="Left" Margin="468,3517,0,0" VerticalAlignment="Top" />
+                        <Label Content="1." Margin="12,3558,0,0" VerticalAlignment="Top" />
+                        <TextBox Margin="26,3558,0,0" x:Name="txtPhuMo1" Text="{Binding PhuMo1}" Width="233.79" />
+                        <Label Content="2." Margin="12,3628,0,0" VerticalAlignment="Top" />
+                        <TextBox Margin="26,3628,0,0" x:Name="txtPhuMo2" Text="{Binding PhuMo2}" Width="233.79" />
+                        <Label Content="1." Margin="0,3559,281,0" VerticalAlignment="Top" HorizontalAlignment="Right" />
+                        <TextBox Margin="0,3558,43,0" x:Name="txtGiamDinhVien1" Text="{Binding GiamDinhVien1}" Width="233.79" HorizontalAlignment="Right" />
+                        <Label Content="2." Margin="0,3629,281,0" VerticalAlignment="Top" HorizontalAlignment="Right" />
+                        <TextBox Margin="0,3628,43,0" x:Name="txtGiamDinhVien2" Text="{Binding GiamDinhVien2}" Width="233.79" HorizontalAlignment="Right" />
+                        <!--<Label Content=", Tp. Hồ Chí Minh." Margin="357,55,197,0" HorizontalAlignment="Stretch" />-->
+
+                    </Grid>
+                </Border>
+            </Grid>
+        </ScrollViewer>
+        <StackPanel Height="25" HorizontalAlignment="Stretch" Margin="10,0,10,10" Orientation="Horizontal" Name="stackPanel2" VerticalAlignment="Bottom">
+            <Button Content="Thêm" Height="23" Name="btnAdd" Width="75" Margin="0,0,5,0" Click="btnAdd_Click" />
+            <Button Content="Sửa" Height="23" Name="btnEdit" Width="75" Margin="0,0,5,0" Click="btnEdit_Click" />
+            <Button Content="Xoá" Height="23" Name="btnDel" Width="75" Click="btnDel_Click" Margin="0,0,5,0" />
+            <TextBlock Height="23" Name="tblMaHoSo" Text="{Binding MaHoSo}" Visibility="Collapsed" />
+            <TextBlock Height="23" Name="tblCheckImageStatus" Visibility="Collapsed" />
+            <Button Content="Print" Height="23" Name="btnPrint" Width="75" Click="btnPrint_Click" />
+        </StackPanel>
+
+    </Grid>
+</UserControl>

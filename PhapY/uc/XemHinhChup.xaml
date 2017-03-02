@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="PhapY.uc.XemHinhChup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid>
+        <ListBox Name="lstViewChooseImg" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto" VerticalAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="0,37,0,0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Background="White" BorderBrush="Silver" BorderThickness="1" Width="150" Height="130" Margin="0,0,2,0">
+                        <StackPanel>
+                            <Image MaxHeight="100" Margin="0,0,0,5" Stretch="Uniform" Source="{Binding Hinh}" />
+                            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat=" {0}{1} ">
+                                      <Binding Source="Ảnh " />
+                                      <Binding Path="ThuTuChon" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel IsItemsHost="True" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+        <Button Content="Lưu ra thư mục" Height="23" HorizontalAlignment="Right" Margin="0,7,11,0" Name="btnSave" VerticalAlignment="Top" Padding="10,0,10,0" Click="btnSave_Click" />
+    </Grid>
+</UserControl>

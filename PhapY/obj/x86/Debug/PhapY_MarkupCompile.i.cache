@@ -1,0 +1,20 @@
+﻿PhapY
+
+
+winexe
+C#
+.cs
+E:\Winform\PhapY\PhapY\PhapY\obj\x86\Debug\
+PhapY
+none
+false
+DEBUG;TRACE
+E:\Winform\PhapY\PhapY\PhapY\App.xaml
+75506120681
+
+1161414397498
+33511080461
+Controls\CurrencyTextbox.xaml;Controls\NumericTextbox.xaml;Controls\RichTextBox.xaml;CreateUser.xaml;MainWindow.xaml;SubWindows\About.xaml;SubWindows\ReportKhamTrinh.xaml;SubWindows\ReportThuongTat.xaml;SubWindows\Copy of WindowInBanGiamDinhThuongTat.xaml;SubWindows\Report.xaml;SubWindows\SQLServerConfiguration.xaml;SubWindows\WindowInBanGiamDinhTinhDuc.xaml;SubWindows\WindowInBanGiamDinhThuongTat.xaml;SubWindows\PhuLucTuThi.xaml;SubWindows\PhuLucThuongTich.xaml;SubWindows\WindowInHinhTuThi.xaml;SubWindows\WindowChupHinhTuThi.xaml;SubWindows\WindowChonBacSi.xaml;SubWindows\WindowInBanGiamDinhTinhDuc1.xaml;SubWindows\WindowInBanGiamDinhTuThi.xaml;SubWindows\WindowKetLuanGiamDinhTuThi.xaml;SubWindows\WindowThemTuThi.xaml;SubWindows\WindowXemBanGiamDinhTuThi.xaml;SubWindows\WindowXemHoSo.xaml;SubWindows\InBienNhan.xaml;SubWindows\WindowKetLuanGiamDinhTinhDuc.xaml;SubWindows\WindowKetLuanGiamDinhThuongTich.xaml;SubWindows\WindowInHinh.xaml;SubWindows\WindowChupHinh.xaml;SubWindows\WindowThemHoSo.xaml;TemplateControl\TemplateThongKeTuThi.xaml;TemplateControl\TemplateDuongSu.xaml;TemplateControl\TemplateNhanvien.xaml;TemplateControl\TemplateThongKeHoSo.xaml;uc\BieuDoThongKeHoSo.xaml;uc\ChangePassword.xaml;uc\ComboboxNhanVien.xaml;uc\ComboboxChucVu.xaml;uc\ComboboxTitle.xaml;uc\BieuDoThongKeTuThi.xaml;uc\ReportViewerKhamTrinh.xaml;uc\ReportViewerThuongTat.xaml;uc\InBanGiamDinhPhapYThuongTatNguyenNhanChet.xaml;uc\InBanGiamDinhPhapYTuThiKhamNgoai.xaml;uc\InBanGiamDinhPhapYTinhDuc.xaml;uc\InBanGiamDinhPhapYThuongTatQHS.xaml;uc\InBanGiamDinhPhapYThuongTat.xaml;uc\NgayGioSuaXoa.xaml;uc\ReportViewer.xaml;uc\XemTuThi.xaml;uc\ThongKeTuThi.xaml;uc\XemHinhChupTuThi.xaml;uc\InHinhTuThi.xaml;uc\DanhSachHoSoTuThi.xaml;uc\CreateUsers.xaml;uc\DanhSachHoSo.xaml;uc\DanhSachChupHinh.xaml;uc\DanhSachTitle.xaml;uc\DanhSachChucVu.xaml;uc\DanhSachNhanVien.xaml;SubWindows\PrintPreviewDialog.xaml;uc\InBanGiamDinhPhapYTuThi.xaml;uc\InHinh.xaml;uc\Login.xaml;uc\LogonServer.xaml;uc\testXPS.xaml;uc\ThemTuThi.xaml;uc\ThongKeHoSo.xaml;uc\TimeTextbox.xaml;uc\XemHinhChup.xaml;ValidatorControls\RequiredFieldValidator.xaml;Window1.xaml;Window2.xaml;Window4.xaml;Window5.xaml;
+
+False
+

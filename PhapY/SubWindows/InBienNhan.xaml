@@ -1,0 +1,93 @@
+﻿<Window x:Class="PhapY.SubWindows.InBienNhan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:fommater="clr-namespace:PhapY.Formatter"
+        Title="InBienNhan" Height="550" Width="20.1cm" FontFamily="Times New Roman" FontSize="16" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Resources>
+        <fommater:BoolImageConverter x:Key="BoolImageConverter"/>
+    </Window.Resources>
+    <Grid>
+        <ToolBar Height="30" HorizontalAlignment="Stretch" Name="toolBar1" VerticalAlignment="Top">
+            <Button Name="btnPrint" VerticalAlignment="Stretch" Click="btnPrint_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/PhapY;component/Images/Print.png" />
+                    <TextBlock Text="In biên nhận" Margin="5,0,0,0" FontWeight="Bold" />
+                </StackPanel>
+            </Button>
+        </ToolBar>
+        <Grid Name="Container" Margin="0,26,0,0">
+            <!--<Grid.Background>
+                <ImageBrush ImageSource="/PhapY;component/Images/bien-nhan.gif" Stretch="Uniform" AlignmentY="Top" AlignmentX="Left"></ImageBrush>
+            </Grid.Background>-->
+            <Label Content="TRUNG TÂM PHÁP Y TP.HCM" Height="28" HorizontalAlignment="Left" Margin="48,15,0,0" Name="label1" VerticalAlignment="Top" FontWeight="Bold" />
+            <Label Content="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" Height="28" HorizontalAlignment="Left" Margin="315,15,0,0" Name="label2" VerticalAlignment="Top" FontWeight="Bold" />
+            <Label Content="Địa chỉ:" Height="28" HorizontalAlignment="Left" Margin="48,33,0,0" Name="label3" VerticalAlignment="Top" />
+            <Label Content="336 Trần Phú, P.7, Q.5" Height="28" HorizontalAlignment="Left" Margin="103,33,0,0" Name="label4" VerticalAlignment="Top" />
+            <Label Content="Độc Lập - Tự Do - Hạnh Phúc" Height="28" HorizontalAlignment="Left" Margin="371,34,0,0" Name="label5" VerticalAlignment="Top" FontWeight="Bold" />
+            <Label Content="Điện thoại:" Height="28" HorizontalAlignment="Left" Margin="48,52,0,0" Name="label6" VerticalAlignment="Top" />
+            <Label Content="39244435" Height="28" HorizontalAlignment="Left" Margin="126,52,0,0" Name="label7" VerticalAlignment="Top" />
+            <Label Content="------o0o------" Height="28" HorizontalAlignment="Left" Margin="433,52,0,0" Name="label8" VerticalAlignment="Top" />
+            <!--<Label Content="Tp. Hồ Chí Minh, ngày ... tháng ... năm .........." Height="28" HorizontalAlignment="Left" Margin="356,71,0,0" VerticalAlignment="Top" FontStyle="Italic" />-->
+            <Label Content="Tp. Hồ Chí Minh, ngày" Height="28" HorizontalAlignment="Left" Margin="356,71,0,0" VerticalAlignment="Top" FontStyle="Italic" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="511,71,0,0" VerticalAlignment="Top" FontStyle="Italic" Width="26" Name="lblNgay" HorizontalContentAlignment="Center" />
+            <Label Content="tháng" Height="28" HorizontalAlignment="Left" Margin="536,71,0,0" VerticalAlignment="Top" FontStyle="Italic" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="582,71,0,0" VerticalAlignment="Top" FontStyle="Italic" Width="26" Name="lblThang" HorizontalContentAlignment="Center" />
+            <Label Content="năm" Height="28" HorizontalAlignment="Left" Margin="610,71,0,0" VerticalAlignment="Top" FontStyle="Italic" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="648,71,0,0" VerticalAlignment="Top" FontStyle="Italic" Width="45" Name="lblNam" HorizontalContentAlignment="Center" />
+            <Label Content="BIÊN NHẬN NHẬN HỒ SƠ" Height="38" HorizontalAlignment="Left" Margin="210,107,0,0" Name="label10" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" />
+            <Label Content="Ngày đến làm hồ sơ:" Height="28" HorizontalAlignment="Left" Margin="397,135,0,0" Name="label11" VerticalAlignment="Top" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="547,135,0,0" Name="label12" VerticalAlignment="Top" Content="{Binding NgayDenLamHoSo,StringFormat=dd/MM/yyyy}" FontStyle="Italic" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="398,156,0,0" VerticalAlignment="Top" Content="Tái khám" />
+            <Image Height="20" HorizontalAlignment="Left" Margin="480,159,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding TaiKham,Converter={StaticResource BoolImageConverter}}" />
+            <Label Content="- Trung Tâm Pháp Y Thành Phố Hồ Chí Minh đã nhận hồ sơ giám định của:" Height="28" HorizontalAlignment="Left" Margin="65,177,0,0" Name="label13" VerticalAlignment="Top" />
+            <Label Content="Ông\Bà:" Height="28" HorizontalAlignment="Left" Margin="78,197,0,0" Name="label14" VerticalAlignment="Top" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="147,197,0,0" Name="label15" VerticalAlignment="Top" Width="321" Content="{Binding HoTen}" HorizontalContentAlignment="Center" FontStyle="Italic" />
+            <Label Content="năm sinh:" Height="28" HorizontalAlignment="Left" Margin="466,197,0,0" Name="label16" VerticalAlignment="Top" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="547,197,0,0" Name="label17" VerticalAlignment="Top" Width="125" Content="{Binding NamSinh}" FontStyle="Italic" />
+            <Label Content="- Cơ quan trưng cầu:" Height="28" HorizontalAlignment="Left" Margin="66,218,0,0" Name="label18" VerticalAlignment="Top" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="227,218,0,0" Name="label19" VerticalAlignment="Top" Width="445" Content="{Binding CoQuanTrungCau}" FontStyle="Italic" />
+            <TextBlock Height="40" HorizontalAlignment="Left" Margin="73,245,0,0" Name="textBlock1" Text="- Hẹn 15 ngày sau khi nhận hồ sơ, cơ quan trưng cầu mang theo biên nhận này đến nhận kết quả (Ngoại trừ các trường hợp cần bổ túc hồ sơ)." VerticalAlignment="Top" TextWrapping="Wrap" Width="599" />
+            <Label Content="- Hồ sơ gồm:" Height="28" HorizontalAlignment="Left" Margin="66,280,0,0" Name="label20" VerticalAlignment="Top" />
+            <Grid Margin="104,295,39,0" VerticalAlignment="Top" Height="80">
+                <Label Content="+ Giấy QĐTCGĐ" Height="28" HorizontalAlignment="Left" Margin="7,7,0,0" Name="label21" VerticalAlignment="Top" />
+                <Label Height="28" HorizontalAlignment="Left" Margin="192,7,0,0" Name="label22" VerticalAlignment="Top" Content="+ Giấy ra viện" />
+                <Label Content="+ Giấy xác nhận nằm viện" Height="28" HorizontalAlignment="Left" Margin="349,7,0,0" Name="label23" VerticalAlignment="Top" />
+                <Label Content="+ Giấy CNTT" Height="28" HorizontalAlignment="Left" Margin="7,27,0,0" Name="label24" VerticalAlignment="Top" />
+                <Label Content="+ Toa thuốc" Height="28" HorizontalAlignment="Left" Margin="190,27,0,0" Name="label25" VerticalAlignment="Top" />
+                <Label Content="+ Bệnh án tóm tắt" Height="28" HorizontalAlignment="Left" Margin="349,27,0,0" Name="label26" VerticalAlignment="Top" />
+                <Label Content="+ Y chứng" Height="28" HorizontalAlignment="Left" Margin="7,44,0,0" Name="label27" VerticalAlignment="Top" />
+                <Label Content="+ Sổ khám bệnh" Height="28" HorizontalAlignment="Left" Margin="190,45,0,0" Name="label28" VerticalAlignment="Top" />
+                <Label Content="+ Khác:" Height="28" HorizontalAlignment="Left" Margin="349,45,0,0" Name="label29" VerticalAlignment="Top" />
+                <Image Height="20" HorizontalAlignment="Left" Margin="136,6,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding GiayQDTCGD,Converter={StaticResource BoolImageConverter}}" />
+                <Image Height="20" HorizontalAlignment="Left" Margin="136,27,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding GiayCNTT,Converter={StaticResource BoolImageConverter}}" />
+                <Image Height="20" HorizontalAlignment="Left" Margin="136,48,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding YChung,Converter={StaticResource BoolImageConverter}}" />
+                <Image Height="20" HorizontalAlignment="Left" Margin="309,5,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding GiayRaVien,Converter={StaticResource BoolImageConverter}}" />
+                <Image Height="20" HorizontalAlignment="Left" Margin="309,26,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding ToaThuoc,Converter={StaticResource BoolImageConverter}}" />
+                <Image Height="20" HorizontalAlignment="Left" Margin="309,47,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding SoKhamBenh,Converter={StaticResource BoolImageConverter}}" />
+                <Image Height="20" HorizontalAlignment="Left" Margin="535,7,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding GiayXacNhanNamVien,Converter={StaticResource BoolImageConverter}}" />
+                <Image Height="20" HorizontalAlignment="Left" Margin="535,28,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding BenhAnTomTat,Converter={StaticResource BoolImageConverter}}" />
+                <Label Height="28" HorizontalAlignment="Left" Margin="417,45,0,0" VerticalAlignment="Top" Width="172" Content="{Binding Khac}" />
+            </Grid>
+            <Image Height="20" HorizontalAlignment="Left" Margin="82,402,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding TT,Converter={StaticResource BoolImageConverter}}" />
+            <Label Content="TT" Height="28" HorizontalAlignment="Left" Margin="95,400,0,0" VerticalAlignment="Top" />
+            <Image Height="20" HorizontalAlignment="Left" Margin="138,402,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding SK,Converter={StaticResource BoolImageConverter}}" />
+            <Label Content="SK" Height="28" HorizontalAlignment="Left" Margin="153,400,0,0" VerticalAlignment="Top" />
+            <Image Height="20" HorizontalAlignment="Left" Margin="201,402,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding YC,Converter={StaticResource BoolImageConverter}}" />
+            <Label Content="YC" Height="28" HorizontalAlignment="Left" Margin="213,400,0,0" VerticalAlignment="Top" />
+            <Image Height="20" HorizontalAlignment="Left" Margin="260,402,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding DT,Converter={StaticResource BoolImageConverter}}" />
+            <Label Content="DT" Height="28" HorizontalAlignment="Left" Margin="275,400,0,0" VerticalAlignment="Top" />
+            <Image Height="20" HorizontalAlignment="Left" Margin="323,402,0,0" Stretch="Uniform" VerticalAlignment="Top" Width="20" Source="{Binding QHS,Converter={StaticResource BoolImageConverter}}" />
+            <Label Content="QHS" Height="28" HorizontalAlignment="Left" Margin="337,400,0,0" VerticalAlignment="Top" />
+            <Image Height="20" Margin="385,402,0,0" Stretch="Uniform" VerticalAlignment="Top" Source="{Binding TD, Converter={StaticResource BoolImageConverter}}" HorizontalAlignment="Left" Width="20" />
+            <Label Content="TD" Height="28" HorizontalAlignment="Left" Margin="399,400,0,0" VerticalAlignment="Top" />
+            <Label Content="NGƯỜI NHẬN HỒ SƠ" Height="33" HorizontalAlignment="Left" Margin="467,379,0,0" Name="label30" VerticalAlignment="Top" FontSize="19" FontWeight="Normal" />
+            <Label Content="Tổng số khám" Height="28" HorizontalAlignment="Left" Margin="113,433,0,0" Name="label31" VerticalAlignment="Top" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="217,433,0,0" Name="label32" VerticalAlignment="Top" Width="26" HorizontalContentAlignment="Center" Content="{Binding TongSoKhamChuyenKhoa}" FontStyle="Italic" />
+            <Label Content="chuyên khoa" Height="28" HorizontalAlignment="Left" Margin="240,433,0,0" Name="label33" VerticalAlignment="Top" />
+            <Label Content="Họ và tên" Height="28" HorizontalAlignment="Left" Margin="429,433,0,0" Name="label34" VerticalAlignment="Top" />
+            <Label Height="28" HorizontalAlignment="Left" Margin="511,433,0,0" Name="label35" VerticalAlignment="Top" Width="188" Content="{Binding NguoiNhanHoSo}" FontStyle="Italic" />
+            
+            
+        </Grid>
+    </Grid>
+</Window>

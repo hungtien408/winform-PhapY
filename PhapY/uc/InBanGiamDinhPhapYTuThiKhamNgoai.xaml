@@ -1,0 +1,901 @@
+﻿<UserControl x:Class="PhapY.uc.InBanGiamDinhPhapYTuThiKhamNgoai"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Formatter="clr-namespace:PhapY.Formatter"
+             mc:Ignorable="d"
+             FontFamily="Times New Roman"
+             FontSize="12pt"
+             d:DesignHeight="3000"
+             d:DesignWidth="625.685039370079">
+    <UserControl.Resources>
+        <Formatter:FormatSex x:Key="FormatSex" />
+        <Formatter:TextIndentConverter x:Key="TextIndentConverter" />
+        <Formatter:TextIndentConverter1 x:Key="TextIndentConverter1" />
+        <Formatter:UpperCaseConverter x:Key="UpperCaseConverter" />
+        <Formatter:FormatVisibility x:Key="FormatVisibility" />
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Height"
+                    Value="25" />
+            <Setter Property="Padding"
+                    Value="0" />
+        </Style>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Height"
+                    Value="25" />
+            <Setter Property="LineHeight"
+                    Value="25" />
+            <Setter Property="Padding"
+                    Value="0" />
+        </Style>
+    </UserControl.Resources>
+    <Grid Name="Container">
+        <Grid>
+            <StackPanel HorizontalAlignment="Left"
+                        Margin="0,0,0,0"
+                        Width="625.685039370079">
+                <!--Width="635.685039370079"-->
+                <Grid>
+                    <Label HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Content="SỞ Y TẾ TP. HỒ CHÍ MINH"
+                           FontSize="13pt" />
+                    <Label Content="TRUNG TÂM PHÁP Y"
+                           HorizontalAlignment="Left"
+                           Margin="13,25,0,0"
+                           VerticalAlignment="Top"
+                           FontWeight="Bold"
+                           FontSize="13pt" />
+                    <Label Content="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Right"
+                           FontWeight="Bold"
+                           FontSize="13pt" />
+                    <TextBlock Margin="0,25,74,0"
+                               VerticalAlignment="Top"
+                               Text="Độc Lập - Tự Do - Hạnh Phúc"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Right"
+                               Width="222"
+                               TextDecorations="Underline"
+                               FontSize="13pt" />
+                    <Label Content="Số:"
+                           HorizontalAlignment="Left"
+                           Margin="33,50,0,0"
+                           VerticalAlignment="Top"
+                           FontSize="13pt" />
+                    <Label Content="{Binding SoHoSo}"
+                           HorizontalAlignment="Left"
+                           Margin="60,50,0,0"
+                           HorizontalContentAlignment="Center"
+                           VerticalAlignment="Top"
+                           FontSize="13pt" />
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Margin="0,50,0,0">
+                        <Label Content="Tp.Hồ Chí Minh, ngày"
+                               FontStyle="Italic"
+                               FontSize="13pt" />
+                        <Label Name="lblNgay"
+                               FontStyle="Italic"
+                               Content="20"
+                               HorizontalContentAlignment="Center"
+                               Margin="10,0,10,0"
+                               FontSize="13pt" />
+                        <Label Content="tháng"
+                               FontStyle="Italic"
+                               FontSize="13pt" />
+                        <Label Name="lblThang"
+                               FontStyle="Italic"
+                               Content="10"
+                               HorizontalContentAlignment="Center"
+                               Margin="10,0,10,0"
+                               FontSize="13pt" />
+                        <Label Content="năm"
+                               FontStyle="Italic"
+                               FontSize="13pt" />
+                        <Label Name="lblNam"
+                               FontStyle="Italic"
+                               Content="2010"
+                               HorizontalContentAlignment="Center"
+                               Margin="10,0,0,0"
+                               FontSize="13pt" />
+                    </StackPanel>
+                    <Label Content="BẢN KẾT LUẬN GIÁM ĐỊNH PHÁP Y TỬ THI"
+                           Height="56"
+                           Margin="0,100,0,0"
+                           VerticalAlignment="Top"
+                           FontSize="16pt"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center" />
+                </Grid>
+                <Grid VerticalAlignment="Top"
+                      Margin="0,0,0,0" Height="250">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Border BorderBrush="black"
+                            BorderThickness="1"
+                            Width="155"
+                            Height="230"
+                            VerticalAlignment="Top">
+                        <Grid>
+                            <TextBlock Width="155"
+                                       Height="230"
+                                       TextWrapping="Wrap"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="0,0,0,0"
+                                       TextAlignment="Center"
+                                       Padding="10,60,10,0"
+                                       FontSize="14pt">
+                            Ảnh <LineBreak /> nhận dạng <LineBreak /> (cỡ 4x6)
+                            </TextBlock>
+                            <Image HorizontalAlignment="Stretch"
+                                   Name="imgHinhDuongSu"
+                                   Stretch="Uniform"
+                                   VerticalAlignment="Stretch"
+                                   Source="{Binding HinhDuongSu}" />
+                        </Grid>
+                    </Border>
+                    <StackPanel VerticalAlignment="Top"
+                                Grid.Column="1"
+                                Margin="20,0,0,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left"
+                                   Content="Họ và tên: "
+                                   d:LayoutOverrides="Height"
+                                   VerticalAlignment="Top"
+                                   FontWeight="Bold" 
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                            <Label HorizontalAlignment="Stretch"
+                                   Content="{Binding HoTen,Converter={StaticResource UpperCaseConverter}}"
+                                   FontWeight="Bold"
+                                   d:LayoutOverrides="Height"
+                                   VerticalAlignment="Top"
+                                   HorizontalContentAlignment="Center"
+                                   FontSize="14pt"/>
+                        </StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="260"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal"
+                                        VerticalAlignment="Top">
+                                <Label Content="Năm sinh: "
+                                       FontWeight="Bold" 
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                                <Label Content="{Binding NamSinh}"
+                                       Margin="5,0,20,0"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        Grid.Column="1">
+                                <Label Content="Giới tính:"
+                                       FontWeight="Bold"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"
+                                       Margin="5,0,0,0"/>
+                                <Label Content="{Binding GioiTinh, Converter={StaticResource FormatSex}}"
+                                       Margin="5,0,0,0"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                            </StackPanel>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label HorizontalAlignment="Left"
+                                   Content="Địa chỉ: "
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,5,0"
+                                   FontWeight="Bold"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                            <TextBlock Name="tblDiaChi"
+                                       Text="{Binding DiaChi}"
+                                       TextWrapping="Wrap"
+                                       VerticalAlignment="Top"
+                                       Height="Auto"
+                                       Grid.Column="1"
+                                       SizeChanged="tblDiaChi_SizeChanged"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                        </Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left"
+                                   Content="Trình độ văn hóa: "
+                                   VerticalAlignment="Top"
+                                   Margin="0,0,5,0"
+                                   FontWeight="Bold"
+                                   FontStyle="Italic"
+                                   FontSize="14pt" />
+                            <TextBlock Text="{Binding TrinhDoVanHoa}"
+                                       VerticalAlignment="Top"
+                                       TextWrapping="Wrap"
+                                       Height="Auto"
+                                       TextAlignment="Center"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                        </StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="260"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0,0,0,0"
+                                        Orientation="Horizontal"
+                                        VerticalAlignment="Top">
+                                <Label Content="Dân tộc: "
+                                       FontWeight="Bold"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                                <Label Content="{Binding DanToc}"
+                                       Margin="5,0,20,0"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        Grid.Column="1">
+                                <Label Content="Quốc tịch:"
+                                       FontWeight="Bold"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                                <Label Content="{Binding QuocTich}"
+                                       Margin="5,0,0,0"
+                                       FontStyle="Italic"
+                                       FontSize="14pt"/>
+                            </StackPanel>
+                        </Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left"
+                                   Content="Tôn giáo: "
+                                   VerticalAlignment="Top"
+                                   FontWeight="Bold"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                            <Label Margin="10,0,0,0"
+                                   Content="{Binding TonGiao}"
+                                   HorizontalContentAlignment="Center"
+                                   VerticalAlignment="Top"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left"
+                                   Content="Nghề nghiệp: "
+                                   VerticalAlignment="Top"
+                                   FontWeight="Bold"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                            <Label Margin="10,0,0,0"
+                                   Content="{Binding NgheNghiep}"
+                                   HorizontalContentAlignment="Center"
+                                   VerticalAlignment="Top"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left"
+                                   Content="Xảy ra: "
+                                   VerticalAlignment="Top"
+                                   FontWeight="Bold"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                            <Label Margin="10,0,0,0"
+                                   Content="{Binding XayRa}"
+                                   HorizontalContentAlignment="Center"
+                                   VerticalAlignment="Top"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left"
+                                   Content="Tại: "
+                                   VerticalAlignment="Top"
+                                   FontWeight="Bold"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                            <Label Margin="10,0,0,0"
+                                   Content="{Binding Tai}"
+                                   HorizontalContentAlignment="Center"
+                                   VerticalAlignment="Top"
+                                   FontStyle="Italic"
+                                   FontSize="14pt"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <!--<Grid Margin="0,10,0,0"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Căn cứ Quyết định trưng cầu giám định pháp y tử thi số:"
+                               VerticalAlignment="Top"
+                               Margin="0,0,0,0"
+                               FontSize="14pt" />
+                        <Label Content="{Binding QDTCGDSo}"
+                               Margin="5,0,5,0"
+                               VerticalAlignment="Top" />
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right"
+                                Orientation="Horizontal">
+                        <Label Content="ngày"
+                               VerticalAlignment="Top" />
+                        <TextBlock Text="{Binding KyNgay,StringFormat=dd}"
+                                   Margin="5,0,5,0"
+                                   VerticalAlignment="Top" />
+                        <Label Content="tháng"
+                               VerticalAlignment="Top" />
+                        <TextBlock Text="{Binding KyNgay,StringFormat=MM}"
+                                   Margin="5,0,5,0"
+                                   VerticalAlignment="Top" />
+                        <Label Content="năm"
+                               VerticalAlignment="Top" />
+                        <TextBlock Text="{Binding KyNgay,StringFormat=yyyy}"
+                                   Margin="5,0,0,0"
+                                   VerticalAlignment="Top" />
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Horizontal"
+                            Margin="0,0,0,0"
+                            VerticalAlignment="Top">
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="của"
+                               VerticalAlignment="Top" />
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="5,0,0,0"
+                               TextWrapping="Wrap"
+                               Text="Cơ quan CSĐT Công an "
+                               FontWeight="Bold"
+                               VerticalAlignment="Top" />
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="{Binding CoQuanTrungCau}"
+                               FontWeight="Bold"
+                               VerticalAlignment="Top" />
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text=", "
+                               FontWeight="Bold"
+                               VerticalAlignment="Top" />
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="{Binding TinhThanh}"
+                               FontWeight="Bold"
+                               VerticalAlignment="Top" />
+                </StackPanel>-->
+                <Grid Margin="0,0,0,0"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="420"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="135"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Căn cứ Quyết định trưng cầu giám định pháp y tử thi số"
+                               VerticalAlignment="Top"
+                               Margin="0,0,0,0"
+                               FontSize="14pt"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                Grid.Column="1">
+                        <Label Content="{Binding QDTCGDSo}"
+                               Margin="5,0,0,0"
+                               VerticalAlignment="Top"
+                               FontSize="14pt"/>
+                        <Label Content=","
+                               Margin="0,0,5,0"
+                               VerticalAlignment="Top"
+                               FontSize="14pt"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right"
+                                Orientation="Horizontal" 
+                                Grid.Column="2">
+                        <Label Content="ngày"
+                               VerticalAlignment="Top"
+                               FontSize="14pt"/>
+                        <TextBlock Text="{Binding KyNgay,StringFormat=dd}"
+                                   Margin="5,0,5,0"
+                                   VerticalAlignment="Top"
+                                   FontSize="14pt"/>
+                        <Label Content="tháng"
+                               VerticalAlignment="Top"
+                               FontSize="14pt"/>
+                        <TextBlock Text="{Binding KyNgay,StringFormat=MM}"
+                                   Margin="5,0,5,0"
+                                   VerticalAlignment="Top"
+                                   FontSize="14pt"/>
+                    </StackPanel>
+                </Grid>
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Label Content="năm"
+                               VerticalAlignment="Top"
+                               FontSize="14pt"/>
+                    <TextBlock Text="{Binding KyNgay,StringFormat=yyyy}"
+                                   Margin="40,0,0,0"
+                                   VerticalAlignment="Top"
+                                   FontSize="14pt"/>
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text=" của"
+                               Margin="80,0,0,0"
+                               VerticalAlignment="Top"
+                               FontSize="14pt" />
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="115,0,0,0"
+                               TextWrapping="Wrap"
+                               Text="Cơ quan CSĐT Công an "
+                               FontWeight="Bold"
+                               VerticalAlignment="Top"
+                               FontSize="14pt"/>
+                    <!--<TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="{Binding CoQuanTrungCau}"
+                               FontWeight="Bold"
+                               VerticalAlignment="Top"
+                               FontSize="14pt"/>-->
+                    <TextBlock VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               Text="{Binding CoQuanTrungCau,Converter={StaticResource TextIndentConverter1},ConverterParameter='                                                                    '}"
+                               Height="Auto"
+                               FontWeight="Bold"
+                               FontSize="14pt" />
+                    <!--<TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text=", "
+                               FontWeight="Bold"
+                               VerticalAlignment="Top"
+                               FontSize="14pt" />
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="{Binding TinhThanh}"
+                               FontWeight="Bold"
+                               VerticalAlignment="Top"
+                               FontSize="14pt"/>-->
+                </Grid>
+                <TextBlock Margin="0,0,0,0"
+                           TextWrapping="Wrap"
+                           Text="Được sự phân công của Giám đốc Trung Tâm Pháp Y Tp.Hồ Chí Minh, chúng tôi:"
+                           VerticalAlignment="Top"
+                           FontSize="14pt"/>
+                <TextBlock Margin="5,0,0,0"
+                           TextWrapping="Wrap"
+                           Text="{Binding NguoiGiamDinh}"
+                           Height="Auto"
+                           Padding="0,11,0,11"
+                           FontSize="14pt"/>
+                <Label HorizontalAlignment="Left"
+                       Content="Đã tiến hành giám định:"
+                       FontSize="14pt"/>
+                <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding HoTen,Converter={StaticResource UpperCaseConverter}}"
+                                   Margin="185,-25,0,0"
+                                   FontSize="14pt"/>
+                <!--<Grid>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Left">
+                        <Label Content="Vào lúc"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=HH}"
+                                   Margin="5,0,5,0" />
+                        <Label Content="giờ"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=mm}"
+                                   Margin="5,0,5,0" />
+                        <Label Content="phút, ngày"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=dd}"
+                                   Margin="5,0,5,0" />
+                        <Label Content="tháng"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=MM}"
+                                   Margin="5,0,5,0" />
+                        <Label Content="năm"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=yyyy}"
+                                   Margin="5,0,5,0" />
+                    </StackPanel>
+                    <StackPanel Name="pnlTai"
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Right">
+                        <Label Content="tại:"></Label>
+                        <Label Name="lblDiaDiemGiamDinh"
+                               Content="{Binding DiaDiemGiamDinh}"
+                               Margin="5,0,0,0"
+                               SizeChanged="lblDiaDiemGiamDinh_SizeChanged"></Label>
+                    </StackPanel>
+                </Grid>
+                <StackPanel Name="pnlTai1"
+                            Orientation="Horizontal"
+                            Height="0">
+                    <Label Content="tại:"
+                           VerticalAlignment="Top"></Label>
+                    <TextBlock Text="{Binding DiaDiemGiamDinh}"
+                               Margin="5,0,0,0"
+                               TextAlignment="Justify"
+                               TextWrapping="Wrap"
+                               Height="auto"
+                               Width="570"></TextBlock>
+                </StackPanel>-->
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top">
+                        <Label Content="Vào lúc" FontSize="14pt"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=HH}"
+                                   Margin="5,0,5,0"
+                                   FontSize="14pt"/>
+                        <Label Content="giờ" FontSize="14pt"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=mm}"
+                                   Margin="5,0,5,0"
+                                   FontSize="14pt"/>
+                        <Label Content="phút, ngày" FontSize="14pt"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=dd}"
+                                   Margin="5,0,5,0"
+                                   FontSize="14pt"/>
+                        <Label Content="tháng" FontSize="14pt"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=MM}"
+                                   Margin="5,0,5,0"
+                                   FontSize="14pt"/>
+                        <Label Content="năm" FontSize="14pt"></Label>
+                        <TextBlock HorizontalAlignment="Left"
+                                   Text="{Binding NgayBatDau,StringFormat=yyyy}"
+                                   Margin="5,0,5,0"
+                                   FontSize="14pt"/>
+                    </StackPanel>
+                    <Label Content="tại:" 
+                           FontSize="14pt" 
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Margin="396,0,0,0"></Label>
+                    <TextBlock VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               Text="{Binding DiaDiemGiamDinh,Converter={StaticResource TextIndentConverter1},ConverterParameter='                                                                                           '}"
+                               Height="Auto"
+                               FontSize="14pt" />
+                </Grid>
+                <!--<Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Trong điều kiện ánh sáng, thời tiết:"></Label>
+                        <Label Content="{Binding DieuKienAnhSangThoiTiet}"
+                               Margin="5,0,5,0"></Label>
+                    </StackPanel>
+                </Grid>-->
+                <Label HorizontalAlignment="Left"
+                       Content="Với sự chứng kiến của:"
+                       FontSize="14pt"/>
+                <TextBlock Margin="5,0,0,0"
+                           TextWrapping="Wrap"
+                           Text="{Binding NguoiChungKien}"
+                           FontSize="14pt"
+                           Height="Auto"></TextBlock>
+                <TextBlock HorizontalAlignment="Left"
+                           Text="I. TÌNH HÌNH SỰ VIỆC"
+                           FontWeight="Bold"
+                           Margin="0,0,0,0"
+                           FontSize="14pt" />
+                <TextBlock Margin="0"
+                           TextWrapping="Wrap"
+                           Text="{Binding NoiDungSuViec,Converter={StaticResource TextIndentConverter1},ConverterParameter='        '}"
+                           Height="{Binding NoiDungSuViec,Converter={StaticResource FormatVisibility}}"
+                           MinHeight="0"
+                           TextAlignment="Justify"
+                           FontSize="14pt" />
+                <!--<Grid VerticalAlignment="Top"
+                      Height="{Binding TienSuCaNhan,Converter={StaticResource FormatVisibility}}"
+                      Margin="30,0,0,0">
+                    <Label HorizontalAlignment="Left"
+                           Content="Tiền sử cá nhân: "
+                           FontSize="13pt" />
+                    <TextBlock Margin="0"
+                               TextWrapping="Wrap"
+                               Text="{Binding TienSuCaNhan,Converter={StaticResource TextIndentConverter1},ConverterParameter='                             '}"
+                               TextAlignment="Justify"
+                               FontSize="13pt" />
+                </Grid>
+                <TextBlock HorizontalAlignment="Center"
+                           Text="II. NGHIÊN CỨU HỒ SƠ, TÀI LIỆU"
+                           FontWeight="Bold"
+                           Margin="0,20,0,0"
+                           TextDecorations="Underline"
+                           FontSize="13pt" />-->
+                <Grid VerticalAlignment="Top"
+                      Height="{Binding TienSuCaNhan,Converter={StaticResource FormatVisibility}}">
+                    <Label VerticalAlignment="Top"
+                           HorizontalAlignment="Left"
+                           Content="Tiền sử cá nhân: "
+                           FontSize="14pt"
+                           Margin="30,0,0,0"/>
+                    <TextBlock VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               Text="{Binding TienSuCaNhan,Converter={StaticResource TextIndentConverter1},ConverterParameter='                                  '}"
+                               Height="Auto"
+                               TextAlignment="Justify"
+                               FontSize="14pt" />
+                </Grid>
+                <TextBlock HorizontalAlignment="Left"
+                           Text="II. NGHIÊN CỨU HỒ SƠ, TÀI LIỆU"
+                           FontWeight="Bold"
+                           Margin="0,0,0,0"
+                           FontSize="14pt" />
+                <!--<Grid VerticalAlignment="Top">
+                    <Label VerticalAlignment="Top" 
+                           HorizontalAlignment="Left"
+                           Content="1. Hồ sơ tài liệu:"
+                           FontWeight="Bold"
+                           FontSize="14pt" />
+                    <TextBlock VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               Text="{Binding HoSoTaiLieu,Converter={StaticResource TextIndentConverter1},ConverterParameter='                              '}"
+                               Height="Auto"
+                               TextAlignment="Justify"
+                               FontSize="14pt" />
+                </Grid>-->
+                <Label VerticalAlignment="Top" 
+                           HorizontalAlignment="Left"
+                           Content="1. Hồ sơ tài liệu:"
+                           FontWeight="Bold"
+                           FontSize="14pt" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="{Binding HoSoTaiLieu}"
+                           Height="{Binding HoSoTaiLieu,Converter={StaticResource FormatVisibility}}"
+                           TextAlignment="Justify"
+                           FontSize="14pt" 
+                           Margin="20,0,0,0"/>
+                <!--<Grid VerticalAlignment="Top">
+                    <Label VerticalAlignment="Top" 
+                           HorizontalAlignment="Left"
+                           Content="2. Nội dung yêu cầu giám định:"
+                           FontWeight="Bold"
+                           FontSize="13pt" />
+                    <TextBlock VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               Text="{Binding NoiDungYeuCau,Converter={StaticResource TextIndentConverter1},ConverterParameter='                                                        '}"
+                               FontStyle="Italic"
+                               Height="Auto"
+                               TextAlignment="Justify"
+                               FontSize="13pt" />
+                </Grid>
+                <Grid VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="171*" />
+                        <ColumnDefinition Width="425*" />
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalAlignment="Left"
+                           Content="3. Nghiên cứu hồ sơ bệnh án, bản kết luận giám định trước, v.v…:"
+                           FontWeight="Bold"
+                           FontSize="13pt"
+                           Grid.ColumnSpan="2" />
+                    <TextBlock VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               Text="{Binding NghienCuuHoSoBenhAn,Converter={StaticResource TextIndentConverter1},ConverterParameter='                                                                                                                    '}"
+                               FontStyle="Italic"
+                               Height="Auto"
+                               TextAlignment="Justify"
+                               FontSize="13pt"
+                               Grid.ColumnSpan="2" />
+                </Grid>-->
+                <Label VerticalAlignment="Top" 
+                           HorizontalAlignment="Left"
+                           Content="2. Nội dung yêu cầu giám định:"
+                           FontWeight="Bold"
+                           FontSize="14pt" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="{Binding NoiDungYeuCau}"
+                           Height="{Binding NoiDungYeuCau,Converter={StaticResource FormatVisibility}}"
+                           TextAlignment="Justify"
+                           FontSize="14pt" 
+                           Margin="20,0,0,0"/>
+                <Label VerticalAlignment="Top" 
+                           HorizontalAlignment="Left"
+                           Content="3. Nghiên cứu hồ sơ bệnh án, bản kết luận giám định trước, v.v…:"
+                           FontWeight="Bold"
+                           FontSize="14pt"/>
+                <TextBlock VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               Text="{Binding NghienCuuHoSoBenhAn}"
+                               Height="{Binding NghienCuuHoSoBenhAn,Converter={StaticResource FormatVisibility}}"
+                               TextAlignment="Justify"
+                               FontSize="14pt"
+                               Margin="20,0,0,0" />
+                <TextBlock HorizontalAlignment="Left"
+                           Text="III. PHẦN GIÁM ĐỊNH"
+                           FontWeight="Bold"
+                           Margin="0,0,0,0"
+                           FontSize="14pt" />
+                <Label HorizontalAlignment="Left"
+                       Content="1. Khám ngoài:"
+                       FontWeight="Bold"
+                       FontSize="14pt" />
+                <!--<TextBlock HorizontalAlignment="Left"
+                           TextWrapping="Wrap"
+                           Text="Mô tả tư thế tử thi:"
+                           TextDecorations="Underline"
+                           FontStyle="Italic"
+                           FontSize="13pt" />-->
+                <Label HorizontalAlignment="Left"
+                       Content="1.1 Nhận dạng và tình trạng tử thi:"
+                       FontSize="14pt" 
+                       Margin="20,0,0,0"/>
+                <TextBlock TextWrapping="Wrap"
+                           Text="{Binding NhanDangVaTinhTrangTuThi}"
+                           Margin="20,0,0,0"
+                           Height="{Binding NhanDangVaTinhTrangTuThi,Converter={StaticResource FormatVisibility}}"
+                           TextAlignment="Justify"
+                           FontSize="14pt" />
+                <Label HorizontalAlignment="Left"
+                       Content="1.2 Các dấu vết thương tích:"
+                       FontSize="14pt" 
+                       Margin="20,0,0,0"/>
+                <TextBlock TextWrapping="Wrap"
+                           Text="{Binding CacDauVetThuongTich}"
+                           Margin="20,0,0,0"
+                           Height="{Binding CacDauVetThuongTich,Converter={StaticResource FormatVisibility}}"
+                           TextAlignment="Justify"
+                           FontSize="14pt" />
+                <!--<TextBlock HorizontalAlignment="Left"
+                           TextWrapping="Wrap"
+                           Text="1.2 Các dấu vết thương tích:"
+                           FontStyle="Italic"
+                           Margin="0"
+                           TextDecorations="Underline"
+                           FontSize="13pt" />
+                <TextBlock Margin="30,0,0,0"
+                           TextWrapping="Wrap"
+                           d:LayoutOverrides="HorizontalMargin"
+                           Text="{Binding CacDauVetThuongTich}"
+                           Height="{Binding CacDauVetThuongTich,Converter={StaticResource FormatVisibility}}"
+                           TextAlignment="Justify"
+                           FontSize="13pt"></TextBlock>-->
+                <Label HorizontalAlignment="Left"
+                       Content="2. Khám trong:"
+                       FontWeight="Bold"
+                       FontSize="14pt" />
+                <TextBlock Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           d:LayoutOverrides="HorizontalMargin"
+                           Text="{Binding KhamTrong}"
+                           Height="{Binding KhamTrong,Converter={StaticResource FormatVisibility}}"
+                           TextAlignment="Justify"
+                           FontSize="14pt"></TextBlock>
+                <!--<Grid VerticalAlignment="Top">
+                    <Label HorizontalAlignment="Left"
+                           Content="3. Cận lâm sàng:"
+                           FontWeight="Bold"
+                           FontSize="13pt" />
+                    <TextBlock x:Name="tblCanLamSang"
+                               VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               FontStyle="Italic"
+                               Height="Auto"
+                               TextAlignment="Justify"
+                               FontSize="13pt" />
+                </Grid>
+                <StackPanel Height="{Binding XetNghiemTeBao_MoBenhHoc,Converter={StaticResource FormatVisibility}}"
+                            Margin="30,0,0,0">
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="Kết quả xét nghiệm mô bệnh học:"
+                               Margin="0"
+                               FontSize="13pt" />
+                    <TextBlock Margin="0"
+                               TextWrapping="Wrap"
+                               Text="{Binding XetNghiemTeBao_MoBenhHoc}"
+                               TextAlignment="Justify"
+                               FontSize="13pt" />
+                </StackPanel>
+                <StackPanel Height="{Binding DocChat,Converter={StaticResource FormatVisibility}}"
+                            Margin="30,0,0,0">
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="Kết quả xét nghiệm độc chất:"
+                               Margin="0"
+                               FontSize="13pt" />
+                    <TextBlock Margin="0"
+                               TextWrapping="Wrap"
+                               Text="{Binding DocChat}"
+                               TextAlignment="Justify"
+                               FontSize="13pt" />
+                </StackPanel>
+                <StackPanel Height="{Binding ADN,Converter={StaticResource FormatVisibility}}"
+                            Margin="30,0,0,0">
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="Kết quả xét nghiệm ADN:"
+                               Margin="0"
+                               FontSize="13pt" />
+                    <TextBlock Margin="0"
+                               TextWrapping="Wrap"
+                               Text="{Binding ADN}"
+                               TextAlignment="Justify"
+                               FontSize="13pt" />
+                </StackPanel>
+                <StackPanel Height="{Binding CacXetNghiemKhac,Converter={StaticResource FormatVisibility}}"
+                            Margin="30,0,0,0">
+                    <TextBlock HorizontalAlignment="Left"
+                               TextWrapping="Wrap"
+                               Text="Các kỹ thuật cận lâm sàng khác:"
+                               Margin="0"
+                               FontSize="13pt" />
+                    <TextBlock Margin="0"
+                               TextWrapping="Wrap"
+                               Text="{Binding CacXetNghiemKhac}"
+                               TextAlignment="Justify"
+                               FontSize="13pt" />
+                </StackPanel>
+                <Label HorizontalAlignment="Left"
+                       Content="4. Kết quả cận lâm sàng:"
+                       FontWeight="Bold"
+                       FontSize="13pt" />
+                <TextBlock Margin="0"
+                           TextWrapping="Wrap"
+                           Text="{Binding KetQuaCanLamSang}"
+                           Height="{Binding KetQuaCanLamSang,Converter={StaticResource FormatVisibility}}"
+                           TextAlignment="Justify"
+                           FontSize="13pt" />-->
+                <Label HorizontalAlignment="Left"
+                       Content="3. Cận lâm sàng:"
+                       FontWeight="Bold"
+                       FontSize="14pt" />
+                <TextBlock Margin="20,0,0,0"
+                           TextWrapping="Wrap"
+                           Text="{Binding KetQuaCanLamSang}"
+                           Height="{Binding KetQuaCanLamSang,Converter={StaticResource FormatVisibility}}"
+                           TextAlignment="Justify"
+                           FontSize="14pt" />
+                <TextBlock HorizontalAlignment="Left"
+                           Text="IV. PHẦN KẾT LUẬN"
+                           FontWeight="Bold"
+                           Margin="0,0,0,0"
+                           FontSize="14pt" />
+                <Grid VerticalAlignment="Top">
+                    <Label HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Content="• Nguyên nhân chết:"
+                           FontWeight="Bold"
+                           FontSize="14pt" />
+                    <TextBlock VerticalAlignment="Top"
+                               TextWrapping="Wrap"
+                               Text="{Binding NguyenNhanChet,Converter={StaticResource TextIndentConverter1},ConverterParameter='                                    '}"
+                               FontWeight="Bold"
+                               Height="Auto"
+                               TextAlignment="Justify"
+                               FontSize="14pt" />
+                </Grid>
+                <Grid Margin="80,20,50,0">
+                    <Label Name="lblGiamDoc"
+                           FontSize="14pt"
+                           HorizontalAlignment="Right"
+                           Margin="0"
+                           Padding="0"
+                           VerticalAlignment="Top"
+                           Content="GIÁM ĐỐC"
+                           FontWeight="Bold" />
+                    <Label Name="lblGiamDinhVien"
+                           FontSize="14pt"
+                           Content="GIÁM ĐỊNH VIÊN"
+                           HorizontalAlignment="Left"
+                           Padding="0"
+                           VerticalAlignment="Top"
+                           FontWeight="Bold" />
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

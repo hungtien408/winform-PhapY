@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="PhapY.uc.Login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="768"
+             d:DesignWidth="1024">
+    <Grid>
+        <Border Background="White">
+            <Border CornerRadius="2"
+                    BorderThickness="1"
+                    BorderBrush="AliceBlue"
+                    Width="350"
+                    Height="125"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label Height="28"
+                           HorizontalAlignment="Left"
+                           Name="label1"
+                           VerticalAlignment="Top"
+                           Width="110"
+                           Content="Tên đăng nhập:"></Label>
+                    <TextBox Height="23"
+                             Grid.Column="1"
+                             Name="txtUserName"
+                             VerticalAlignment="Top"
+                             Width="Auto" />
+                    <Label Name="label2"
+                           Height="28"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Width="120"
+                           Content="Mật khẩu:"
+                           Grid.Row="1"></Label>
+                    <PasswordBox Height="23"
+                                 Name="txtPWD"
+                                 Grid.Row="1"
+                                 Grid.Column="1" />
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top"
+                                Grid.Row="2"
+                                Margin="0,30,0,0">
+                        <Button x:Name="btnConfiguration"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Content="Cấu hình"
+                                Padding="20,2,20,3"
+                                BorderThickness="1"
+                                Click="btnConfiguration_Click" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top"
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                Margin="0,30,0,0">
+                        <Button Height="23"
+                                HorizontalAlignment="Left"
+                                Name="btnLogin"
+                                VerticalAlignment="Bottom"
+                                Width="75"
+                                Click="btnLogin_Click"
+                                IsDefault="True"
+                                Content="Đăng nhập"></Button>
+                        <Button Height="23"
+                                Name="btnClose"
+                                VerticalAlignment="Bottom"
+                                HorizontalAlignment="Right"
+                                Width="75"
+                                Click="btnClose_Click"
+                                Content="Thoát"
+                                Margin="5,0,0,0"></Button>
+                    </StackPanel>
+                    <CheckBox Content="Ghi nhớ"
+                              Height="16"
+                              HorizontalAlignment="Right"
+                              Name="chkRemember"
+                              VerticalAlignment="Center"
+                              Margin="0,30,0,0"
+                              Grid.Row="2"
+                              Grid.Column="1"/>
+                </Grid>
+            </Border>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,5 @@
+03/11/2014 12:02:40 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Could not find stored procedure 'get_khamngoai'.
+03/11/2014 1:46:44 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Procedure or Function 'insert_tuthi' expects parameter '@ChanDoanYPhap', which was not supplied.
+03/11/2014 1:53:23 PM ==> Void OnError(System.Data.SqlClient.SqlException, Boolean) Lỗi: Could not find stored procedure 'get_tuthi_last'.
+03/11/2014 2:44:28 PM ==> System.Data.DataRow GetRow(Int32) Lỗi: Index 0 is either negative or above rows count.
+03/11/2014 2:44:35 PM ==> System.Data.DataRow GetRow(Int32) Lỗi: Index 0 is either negative or above rows count.

@@ -1,0 +1,114 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="PhapY.SubWindows.PhuLucThuongTich"
+        Title="Phụ lục thương tích" Height="700" Width="600" FontFamily="Times New Roman" FontSize="13pt" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="23" />
+            <Setter Property="Padding" Value="0,0,0,0" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <VisualBrush
+                    TileMode="Tile"
+                    Viewport="0,-0.98,3,20"
+                    ViewportUnits="Absolute"
+                    Viewbox="0,0,3,20"
+                    ViewboxUnits="Absolute">
+                        <VisualBrush.Visual>
+                            <Rectangle
+                            Fill="Black"
+                            Width="1" Height="1" />
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="0.212*"/>
+    		<RowDefinition Height="0.788*"/>
+    	</Grid.RowDefinitions>
+        <ScrollViewer Margin="0,0,0,49" Grid.RowSpan="2">
+            <Grid x:Name="Container" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock HorizontalAlignment="Left" Margin="27,8,0,0" TextWrapping="Wrap" Text="SỞ Y TẾ TP.HCM" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="8,29.466,0,0" TextWrapping="Wrap" Text="TRUNG TÂM PHÁP Y" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+                <TextBlock HorizontalAlignment="Left" Margin="22,50.932,0,0" TextWrapping="Wrap" Text="Số HS:" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+                <TextBlock Name="tblSoHoSo" HorizontalAlignment="Left" Margin="79.433,50.932,0,0" TextWrapping="Wrap" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment" Text="{Binding SoHoSo}"/>
+                <TextBlock HorizontalAlignment="Left" Margin="164,89.398,0,0" TextWrapping="Wrap" Text="PHỤ LỤC DANH MỤC HỒ SƠ" VerticalAlignment="Top" FontWeight="Bold"/>
+                <CheckBox x:Name="chkBanGiamDinhYPhap" Content="Bản giám định y pháp." HorizontalAlignment="Left" Margin="45,130,0,0" VerticalAlignment="Top" IsChecked="{Binding BanGiamDinhYPhap}"/>
+                <CheckBox x:Name="chkBanKetLuanThuongTich" Content="Bản kết luận giám định pháp y về thương tích." HorizontalAlignment="Left" Margin="45,152,0,0" VerticalAlignment="Top" IsChecked="{Binding BanKetLuanThuongTich}"/>
+                <CheckBox x:Name="chkQuyetDinhTrungCauGiamDinh" Content="Quyết định trưng cầu giám định." HorizontalAlignment="Left" Margin="45,174,0,0" VerticalAlignment="Top" IsChecked="{Binding QuyetDinhTrungCauGiamDinh}"/>
+                <CheckBox x:Name="chkBanSaoCMNDHoChieu" Content="Bản sao CMND/ hộ chiếu." HorizontalAlignment="Left" Margin="45,196,0,0" VerticalAlignment="Top" IsChecked="{Binding BanSaoCMNDHoChieu}"/>
+                <CheckBox x:Name="chkGiayRavien" Content="Giấy ra viện." HorizontalAlignment="Left" Margin="45,218,0,0" VerticalAlignment="Top" IsChecked="{Binding GiayRavien}"/>
+                <CheckBox x:Name="chkGiayChungNhanThuongTich" Content="Giấy chứng nhận thương tích." HorizontalAlignment="Left" Margin="45,240,0,0" VerticalAlignment="Top" IsChecked="{Binding GiayChungNhanThuongTich}"/>
+                <CheckBox x:Name="chkBienBanXemXetDauVetCoThe" Content="Biên bản xem xét dấu vết cơ thể." HorizontalAlignment="Left" Margin="45,262,0,0" VerticalAlignment="Top" IsChecked="{Binding BienBanXemXetDauVetCoThe}"/>
+                <CheckBox x:Name="chkSoKhamBenh" Content="Sổ khám bệnh." Margin="45,284,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding SoKhamBenh}"/>
+                <CheckBox x:Name="chkToaThuoc" Content="Toa thuốc" Margin="234.337,284,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding ToaThuoc}"/>
+                <CheckBox x:Name="chkYChung" Content="Y Chứng" Margin="429.573,284,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding YChung}"/>
+                <CheckBox x:Name="chkBenhAnTomTat" Content="Bệnh án tóm tắt." Margin="45,306,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding BenhAnTomTat}"/>
+                <CheckBox x:Name="chkBanSaoHoSoBenhAn" Content="Bản sao hồ sơ bệnh án." Margin="234.337,306,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding BanSaoHoSoBenhAn}"/>
+                <CheckBox x:Name="chkBenhAnCapCuu" Content="Bệnh án cấp cứu." Margin="45,328,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding BenhAnCapCuu}"/>
+                <CheckBox x:Name="chkBenhAnNgoaiChuan" Content="Bệnh án ngoại chuẩn." Margin="234.337,328,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding BenhAnNgoaiChuan}"/>
+                <CheckBox x:Name="chkXQ" Content="XQ:" HorizontalAlignment="Left" Margin="45,350,0,0" VerticalAlignment="Top" IsChecked="{Binding XQ}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="A" Height="21.467" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" Margin="106.65,350,0,0"/>
+                <TextBox x:Name="txtXQA" HorizontalAlignment="Left" Margin="124.13,346.93,0,0" TextWrapping="Wrap" Width="51.91" VerticalAlignment="Top" HorizontalContentAlignment="Center" Text="{Binding XQA}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="tấm; B" Height="21.467" VerticalAlignment="Top" Margin="180.04,350,0,0" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+                <TextBox x:Name="txtXQB" HorizontalAlignment="Left" Margin="234.337,346.93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51.91" HorizontalContentAlignment="Center" Text="{Binding XQB}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="tấm." Height="21.467" VerticalAlignment="Top" Margin="290.247,350,0,0" d:LayoutOverrides="VerticalAlignment"/>
+                <CheckBox x:Name="chkCTScanner" Content="CT Scanner" Margin="45,372,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding CTScanner}" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBox x:Name="txtCTScanner" HorizontalAlignment="Left" Margin="147.993,368.93,0,0" TextWrapping="Wrap" Width="51.91" VerticalAlignment="Top" HorizontalContentAlignment="Center" Text="{Binding CTScannerInput}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="tấm." Height="21.467" VerticalAlignment="Top" Margin="203.903,372,0,0" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+                <CheckBox x:Name="chkMRI" Content="MRI" Margin="265,372,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding MRI}" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBox x:Name="txtMRIInput" HorizontalAlignment="Left" Margin="317.993,368.93,0,0" TextWrapping="Wrap" Width="51.91" VerticalAlignment="Top" HorizontalContentAlignment="Center" Text="{Binding MRIInput}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="tấm." Height="21.467" VerticalAlignment="Top" Margin="373.903,372,0,0" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+                <CheckBox x:Name="chkEEG" Content="EEG" Margin="45,394,0,331" HorizontalAlignment="Left" IsChecked="{Binding EEG}" d:LayoutOverrides="Height"/>
+                <CheckBox x:Name="chkEMG" Content="EMG" Margin="164,394,0,331" HorizontalAlignment="Left" IsChecked="{Binding EMG}" d:LayoutOverrides="Height"/>
+                <CheckBox x:Name="chkECG" Content="ECG" Margin="300.946,394,0,331" HorizontalAlignment="Left" IsChecked="{Binding ECG}" d:LayoutOverrides="Height"/>
+                <CheckBox x:Name="chkCNHH" Content="CNHH" Margin="429.573,394,0,331" HorizontalAlignment="Left" IsChecked="{Binding CNHH}" d:LayoutOverrides="Height"/>
+                <CheckBox x:Name="chkSieuAm" Content="Siêu âm" Margin="45,415,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding SieuAm}"/>
+                <CheckBox x:Name="chkXetNghiem" Content="Xét nghiệm" Margin="300.946,415,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding XetNghiem}"/>
+                <CheckBox x:Name="chkNoiSoi" Content="Nội soi" Margin="429.573,415,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding NoiSoi}"/>
+                <TextBlock HorizontalAlignment="Left" Margin="43.2,437,0,0" TextWrapping="Wrap" Text="Khám chuyên khoa:" FontWeight="Bold" VerticalAlignment="Top"/>
+                <CheckBox x:Name="chkTMH" Content="TMH" Margin="45,459,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding TMH}"/>
+                <CheckBox x:Name="chkRHM" Content="RHM" Margin="164,459,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding RHM}"/>
+                <CheckBox x:Name="chkCTCH" Content="CTCH" Margin="300.946,459,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding CTCH}"/>
+                <CheckBox x:Name="chkMat" Content="Mắt" Margin="429.573,459,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding Mat}"/>
+                <CheckBox x:Name="chkNoiTimMach" Content="Nội tim mạch" Margin="45,481,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding NoiTimMach}"/>
+                <CheckBox x:Name="chkNoiTieuHoa" Content="Nội tiêu hoá" Margin="234.337,481,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding NoiTieuHoa}"/>
+                <CheckBox x:Name="chkNoiTiet" Content="Nội tiết" Margin="429.573,481,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding NoiTiet}"/>
+                <CheckBox x:Name="chkNoiThanKinh" Content="Nội thần kinh" Margin="45,503,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding NoiThanKinh}"/>
+                <CheckBox x:Name="chkNoiHoHap" Content="Nội hô hấp" Margin="234.337,503,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding NoiHoHap}"/>
+                <CheckBox x:Name="chkLao" Content="BVNĐới" Margin="429.573,503,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding Lao}"/>
+                <CheckBox x:Name="chkSoDoPhacHoa" Content="Sơ đồ phác họa dấu vết trên người bị nạn: chụp" Margin="45,525,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding SoDoPhacHoa}"/>
+                <TextBox x:Name="txtChup" HorizontalAlignment="Left" Margin="400,525,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51.91" HorizontalContentAlignment="Center" Text="{Binding Chup}"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="tấm hình." Margin="456,525,0,0" Height="21.467" VerticalAlignment="Top"/>
+                <CheckBox x:Name="chkBienBanGiaoNhanTaiLieuGiamDinh" Content="Biên bản giao nhận tài liệu giám định qua hồ sơ." Margin="45,547,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding BienBanGiaoNhanTaiLieuGiamDinh}"/>
+                <CheckBox x:Name="chkGiayCamKetKhongKhamChuyenKhoa" Content="Giấy cam kết" Margin="45,569,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding GiayCamKetKhongKhamChuyenKhoa}"/>
+                <TextBox x:Name="txtGiayCamKetInput" HorizontalAlignment="Left" Margin="158.407,565.93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375.702" HorizontalContentAlignment="Center" Text="{Binding GiayCamKetInput}"/>
+                <CheckBox x:Name="chkCongVanSo" Content="Công văn số:" Margin="45,591,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding CongVanSo}"/>
+                <TextBox x:Name="txtNoiDungCongVan" HorizontalAlignment="Left" Margin="164.52,591,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369.589" HorizontalContentAlignment="Center" Text="{Binding NoiDungCongVan}"/>
+                <CheckBox x:Name="chkKhac" Content="Khác:" Margin="45,613,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" IsChecked="{Binding Khac}"/>
+                <TextBox x:Name="txtNoiDungKhac" HorizontalAlignment="Left" Margin="110.573,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423.536" HorizontalContentAlignment="Center" Text="{Binding NoiDungKhac}"/>
+                <TextBlock HorizontalAlignment="Left" Margin="88.746,635,0,0" TextWrapping="Wrap" Text="Tổng cộng:" FontWeight="Bold" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtTongCong" HorizontalAlignment="Left" Margin="182.466,635,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76.844" HorizontalContentAlignment="Center" d:LayoutOverrides="HorizontalAlignment" Text="{Binding TongCong}"/>
+                <TextBlock Margin="263.465,635,0,0" TextWrapping="Wrap" Text="mục" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <TextBlock Margin="185.693,657,0,0" TextWrapping="Wrap" Text="TPHCM, ngày" VerticalAlignment="Top" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Name="lblCurrentDate" Content="20" Margin="298.579,657,0,0" VerticalAlignment="Top" Padding="0" HorizontalAlignment="Left" Width="26.7" HorizontalContentAlignment="Center"/>
+                <TextBlock Margin="329.279,657,0,0" TextWrapping="Wrap" Text="tháng" VerticalAlignment="Top" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label Name="lblCurrentMonth" Content="12" Margin="375.799,657,0,0" VerticalAlignment="Top" Padding="0" HorizontalAlignment="Left" Width="26.7" HorizontalContentAlignment="Center"/>
+                <TextBlock Margin="406.499,657,0,0" TextWrapping="Wrap" Text="năm" VerticalAlignment="Top" HorizontalAlignment="Left" FontStyle="Italic"/>
+                <Label  Name="lblCurrentYear" Content="2010" Margin="446.386,657,0,0" VerticalAlignment="Top" Padding="0" HorizontalAlignment="Left" Width="43.7" HorizontalContentAlignment="Center"/>
+                <TextBlock Margin="281.47,679,0,0" TextWrapping="Wrap" Text="(ký và ghi rõ họ tên)" VerticalAlignment="Top" HorizontalAlignment="Left" FontStyle="Italic"/>
+            </Grid>
+        </ScrollViewer>
+        <StackPanel HorizontalAlignment="Stretch" Margin="10,0,10,10" Background="White" VerticalAlignment="Bottom" Orientation="Horizontal" Grid.Row="1">
+            <Button Content="Cập nhật" FontSize="14" Height="23" Margin="0,10,10,0" Name="btnUpdate" Padding="10,0,10,0" Click="btnUpdate_Click" />
+            <Button Content="Print" FontSize="14" Height="23" Margin="0,10,0,0" Name="btnPrint" Padding="10,0,10,0" Click="btnPrint_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
